@@ -1,5 +1,5 @@
-import RandomBeacon from "@keep-network/random-beacon/artifacts/RandomBeacon.json"
-import WalletRegistry from "@keep-network/ecdsa/artifacts/WalletRegistry.json"
+import RandomBeacon from "../../artifacts/RandomBeacon.json"
+import WalletRegistry from "../../artifacts/WalletRegistry.json"
 import {
   Application,
   AuthorizationParameters,

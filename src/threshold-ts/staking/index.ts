@@ -1,4 +1,4 @@
-import TokenStaking from "@threshold-network/solidity-contracts/artifacts/TokenStaking.json"
+import TokenStaking from "../../artifacts/TokenStaking.json"
 import NuCypherStakingEscrow from "@threshold-network/solidity-contracts/artifacts/NuCypherStakingEscrow.json"
 import KeepTokenStaking from "@keep-network/keep-core/artifacts/TokenStaking.json"
 import { BigNumber, BigNumberish, Contract, ContractTransaction } from "ethers"

@@ -1,4 +1,4 @@
-import T from "@threshold-network/solidity-contracts/artifacts/T.json"
+import T from "../../artifacts/T.json"
 import { Contract } from "@ethersproject/contracts"
 import { useErc20TokenContract } from "./useERC20"
 import { Token, TransactionType } from "../../enums"

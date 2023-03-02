@@ -29,11 +29,11 @@ import {
   ElectrumClient,
   EthereumBridge,
 } from "@keep-network/tbtc-v2.ts/dist/src"
-import BridgeArtifact from "@keep-network/tbtc-v2/artifacts/Bridge.json"
+import BridgeArtifact from "../../artifacts/Bridge.json"
 import { BitcoinConfig, BitcoinNetwork, EthereumConfig } from "../types"
-import TBTCVault from "@keep-network/tbtc-v2/artifacts/TBTCVault.json"
-import Bridge from "@keep-network/tbtc-v2/artifacts/Bridge.json"
-import TBTCToken from "@keep-network/tbtc-v2/artifacts/TBTC.json"
+import TBTCVault from "../../artifacts/TBTCVault.json"
+import Bridge from "../../artifacts/Bridge.json"
+import TBTCToken from "../../artifacts/TBTC.json"
 import { BigNumber, Contract } from "ethers"
 import { ContractCall, IMulticall } from "../multicall"
 import { Interface } from "ethers/lib/utils"

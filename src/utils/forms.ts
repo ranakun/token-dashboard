@@ -80,7 +80,8 @@ export const validateETHAddress = (address: string) => {
 
 export const validateBTCAddress = (
   address: string,
-  network: Network = Network.mainnet
+  // network: Network = Network.mainnet
+  network: Network = Network.testnet
 ) => {
   if (!address) {
     return "Required."

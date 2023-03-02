@@ -1,4 +1,4 @@
-import TStakingContract from "@threshold-network/solidity-contracts/artifacts/TokenStaking.json"
+import TStakingContract from "../../artifacts/TokenStaking.json"
 import { supportedChainId } from "../../utils/getEnvVariable"
 import { useContract } from "./useContract"
 

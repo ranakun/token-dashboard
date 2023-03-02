@@ -1,4 +1,4 @@
-import VendingMachineKeep from "@threshold-network/solidity-contracts/artifacts/VendingMachineKeep.json"
+import VendingMachineKeep from "../../artifacts/VendingMachineKeep.json"
 import VendingMachineNuCypher from "@threshold-network/solidity-contracts/artifacts/VendingMachineNuCypher.json"
 import { useContract } from "./useContract"
 import { UpgredableToken } from "../../types"
