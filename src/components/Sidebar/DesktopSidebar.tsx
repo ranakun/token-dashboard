@@ -20,9 +20,9 @@ const DesktopSidebar: FC<{ navItems: NavItemDetail[] }> = ({ navItems }) => {
       position="relative"
       borderRight="1px solid"
       borderColor={useColorModeValue("gray.100", "gray.700")}
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("#ebebeb", "gray.800")}
     >
-      <ExpanderIcon />
+      {/* <ExpanderIcon /> */}
       <AlphaReleaseTag />
       <BrandIcon />
       <Stack
@@ -38,7 +38,7 @@ const DesktopSidebar: FC<{ navItems: NavItemDetail[] }> = ({ navItems }) => {
           <NavItem key={props.text} {...props} />
         ))}
       </Stack>
-      <SidebarFooter />
+      {/* <SidebarFooter /> */}
     </Box>
   )
 }

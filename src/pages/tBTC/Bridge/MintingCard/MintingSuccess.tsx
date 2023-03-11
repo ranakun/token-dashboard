@@ -39,7 +39,7 @@ const MintingSuccessComponent: FC<{
       />
       <TbtcMintingCardSubTitle
         stepText="Success"
-        subTitle="Your tBTC is on its way!"
+        subTitle="Your iBTC is on its way!"
       />
       <InfoBox>
         <Image src={tbtcSuccess} />
@@ -59,7 +59,7 @@ const MintingSuccessComponent: FC<{
           .
         </BodyLg>
         <BodySm>
-          Add the tBTC{" "}
+          Add the iBTC{" "}
           <ViewInBlockExplorer
             id={tbtcTokenAddress}
             type={ExplorerDataType.ADDRESS}

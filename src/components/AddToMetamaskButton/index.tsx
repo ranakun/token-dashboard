@@ -29,7 +29,7 @@ const AddToMetamaskButton: FC<{ contract: Contract | null }> = ({
           onClose={() => setIsTokenAlreadyAdded(false)}
           isOpen={isTokenAlreadyAdded}
         >
-          <Button variant="link" colorScheme="brand" onClick={_addToMetamask}>
+          <Button variant="link" colorScheme="gray" onClick={_addToMetamask}>
             Add to MetaMask
           </Button>
         </Tooltip>

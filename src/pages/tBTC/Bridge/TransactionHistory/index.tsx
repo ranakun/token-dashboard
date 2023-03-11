@@ -76,7 +76,7 @@ export const TransactionHistoryTable: FC<{
         <Thead>
           <Tr color="gray.500">
             <LabelSm as={Th} paddingInlineStart="2" paddingInlineEnd="2">
-              TBTC
+              iBTC
             </LabelSm>
             <LabelSm as={Th} paddingInlineStart="2" paddingInlineEnd="2">
               TX
@@ -119,14 +119,16 @@ export const TransactionHistoryTable: FC<{
 
       {isHistoryEmpty && (
         <>
-          <Image
+          {/* <Image
             alt="no-history"
             src={epmtyHistoryImg}
             mx="auto"
             mt={16}
             mb={4}
-          />
-          <BodyMd textAlign="center">You have no history yet.</BodyMd>
+          /> */}
+          <BodyMd textAlign="center" mx="auto" mt={150}>
+            You have no history yet.
+          </BodyMd>
         </>
       )}
     </>

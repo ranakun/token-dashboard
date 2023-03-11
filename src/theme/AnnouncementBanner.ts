@@ -22,8 +22,8 @@ const baseStyle: PartsStyleFunction<typeof parts> = (props) => {
       position: "relative",
       px: "16",
       mb: 4,
-      bg: mode("gradient.4", "#13171B")(props),
-      borderColor: mode("brand.100", "brand.500")(props),
+      bg: "#bebebe",
+      borderColor: "#bfbcbc",
     },
     closeButton: {
       position: "absolute",
@@ -35,7 +35,7 @@ const baseStyle: PartsStyleFunction<typeof parts> = (props) => {
       bg: "inherit",
     },
     image: {
-      maxW: "280px",
+      maxW: "170px",
     },
     preTitle: {
       color: mode(undefined, "brand.300")(props),

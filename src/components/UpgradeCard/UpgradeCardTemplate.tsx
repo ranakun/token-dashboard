@@ -64,7 +64,7 @@ const UpgradeCardTemplate: FC<UpgradeCardTemplateProps> = ({
           />
         </LineDivider>
         <HStack mt={9}>
-          <BodySm fontWeight="bold">T Amount</BodySm>
+          <BodySm fontWeight="bold">BAT Amount</BodySm>
           <BodySm ml={4} color={useColorModeValue("gray.500", "gray.300")}>
             {`1 ${token} = ${exchangeRate} T`}
           </BodySm>

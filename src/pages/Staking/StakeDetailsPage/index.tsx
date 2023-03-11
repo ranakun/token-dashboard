@@ -100,7 +100,7 @@ const StakeDetailsPage: FC = () => {
               <TokenBalance
                 tokenAmount={stake.totalInTStake.toString()}
                 withSymbol
-                tokenSymbol="T"
+                tokenSymbol="BAT"
                 isLarge
               />
             </InfoBox>
@@ -111,7 +111,7 @@ const StakeDetailsPage: FC = () => {
               <TokenBalance
                 tokenAmount={rewardsForStake}
                 withSymbol
-                tokenSymbol="T"
+                tokenSymbol="ETH"
                 isLarge
               />
             </InfoBox>

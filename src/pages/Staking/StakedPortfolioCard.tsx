@@ -29,13 +29,13 @@ const StakedPortfolioCard: FC<ComponentProps<typeof Card>> = (props) => {
         <TokenBalance
           tokenAmount={stakedBalance.toString()}
           withSymbol
-          tokenSymbol="T"
+          tokenSymbol="BAT"
           isLarge
         />
       </InfoBox>
       <HStack mt="8" justify="space-between" w="100%">
         <BoxLabel status="secondary">Wallet</BoxLabel>
-        <BodyLg>{formatTokenAmount(tBalance)} T</BodyLg>
+        <BodyLg>{formatTokenAmount(tBalance)} BAT</BodyLg>
       </HStack>
     </Card>
   )

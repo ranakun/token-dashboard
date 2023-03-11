@@ -77,7 +77,7 @@ const NewStakerAuthorizationForm: FC<Props & FormikProps<FormValues>> = ({
   return (
     <Form onSubmit={handleSubmit}>
       <Box bg="brand.50" p={4} borderRadius={6} mb={6}>
-        <BodyMd mb={4}>tBTC + Random Beacon Rewards Bundle</BodyMd>
+        <BodyMd mb={4}>iBTC + Random Beacon Rewards Bundle</BodyMd>
         <NewStakerAuthorizationCard
           stakingAppName="tbtc"
           min={tbtcInputConstraints.min}

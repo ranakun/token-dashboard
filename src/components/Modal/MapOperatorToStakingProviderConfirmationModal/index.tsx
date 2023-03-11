@@ -143,7 +143,7 @@ const MapOperatorToStakingProviderConfirmationModal: FC<
         </InfoBox>
         {!isOperatorMappedOnlyInTbtc && (
           <OperatorMappingConfirmation
-            appName="tbtc"
+            appName="ibtc"
             operator={operator}
             stakingProvider={account ? account : AddressZero}
           />

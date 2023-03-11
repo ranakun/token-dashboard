@@ -28,6 +28,7 @@ const SubmitTxButton: FC<Props> = ({
   return (
     <Button
       mt={6}
+      colorScheme="gray"
       isFullWidth
       onClick={() => openModal(ModalType.SelectWallet)}
       {...buttonProps}

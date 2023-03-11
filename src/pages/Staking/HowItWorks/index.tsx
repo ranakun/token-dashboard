@@ -9,8 +9,8 @@ import StakingOverview from "./StakingOverview"
 import StakingApplications from "./StakingApplications"
 import StakingProviders from "./StakingProviders"
 import AnnouncementBanner from "../../../components/AnnouncementBanner"
-import stakingHowItWorksIllustrationLight from "../../../static/images/StakingHowItWorksIllustrationLight.png"
-import stakingHowItWorksIllustrationDark from "../../../static/images/StakingHowItWorksIllustrationDark.png"
+// import stakingHowItWorksIllustrationLight from "../../../static/images/StakingHowItWorksIllustrationLight.png"
+import stakingHowItWorksIllustrationDark from "../../../static/images/batCoin.png"
 import { PageComponent } from "../../../types"
 import {
   Link as RouterLink,
@@ -25,7 +25,7 @@ const HowItWorksPage: PageComponent = () => {
   const navigate = useNavigate()
 
   const howItWorksIllustration = useColorModeValue(
-    stakingHowItWorksIllustrationLight,
+    stakingHowItWorksIllustrationDark,
     stakingHowItWorksIllustrationDark
   )
 
@@ -40,10 +40,10 @@ const HowItWorksPage: PageComponent = () => {
     switch (pathname) {
       case `${basePath}/overview`:
         return "1"
-      case `${basePath}/applications`:
-        return "2"
-      case `${basePath}/providers`:
-        return "3"
+      // case `${basePath}/applications`:
+      //   return "2"
+      // case `${basePath}/providers`:
+      //   return "3"
     }
     return "1"
   }, [pathname])
@@ -51,7 +51,7 @@ const HowItWorksPage: PageComponent = () => {
   return (
     <Box>
       <AnnouncementBanner
-        variant="secondary"
+        // variant="secondary"
         imgSrc={howItWorksIllustration}
         title="Find more information about staking below, then go to the staking page."
         href="/staking"
@@ -62,15 +62,15 @@ const HowItWorksPage: PageComponent = () => {
       />
       {featureFlags.MULTI_APP_STAKING && (
         <FilterTabs selectedTabId={selectedTabId} mb="5" size="lg">
-          <FilterTab tabId={"1"} as={RouterLink} to="overview">
+          <FilterTab tabId={"1"} as={RouterLink} to="overview" color="tomato">
             Overview
           </FilterTab>
-          <FilterTab tabId={"2"} as={RouterLink} to="applications">
+          {/* <FilterTab tabId={"2"} as={RouterLink} to="applications">
             Applications
           </FilterTab>
           <FilterTab tabId={"3"} as={RouterLink} to="providers">
             Providers
-          </FilterTab>
+          </FilterTab> */}
         </FilterTabs>
       )}
       <Outlet />

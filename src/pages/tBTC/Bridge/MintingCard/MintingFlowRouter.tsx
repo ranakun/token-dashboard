@@ -89,7 +89,7 @@ export const MintingFlowRouter: FC = () => {
         <MintingFlowRouterBase />
       ) : (
         <>
-          <H5 align={"center"}>Connect wallet to mint tBTC</H5>
+          <H5 align={"center"}>Connect wallet to mint iBTC</H5>
           <SubmitTxButton />
         </>
       )}

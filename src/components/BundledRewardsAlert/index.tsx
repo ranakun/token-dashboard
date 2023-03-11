@@ -8,7 +8,7 @@ import {
 } from "@threshold-network/components"
 
 const defaultText =
-  "tBTC + Random Beacon earn bundled rewards. Authorize both apps to earn rewards."
+  "iBTC + Random Beacon earn bundled rewards. Authorize both apps to earn rewards."
 
 const BundledRewardsAlert: FC<{ text?: string } & AlertProps> = ({
   text = defaultText,

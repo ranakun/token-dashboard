@@ -29,7 +29,7 @@ export const Banner = () => {
           <Box as="header" textAlign={{ base: "left", xl: "unset" }}>
             <AnnouncementBannerTitle
               preTitle="announcing"
-              title="The NEW tBTC dApp is here!"
+              title="The NEW iBTC dApp is here!"
             />
           </Box>
           <Divider

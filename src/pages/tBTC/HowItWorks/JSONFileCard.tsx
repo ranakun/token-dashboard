@@ -14,7 +14,7 @@ export const JSONFileCard: FC<ComponentProps<typeof Card>> = ({ ...props }) => {
       </BodySm>
       <BodySm mb="5">
         It’s important to keep this JSON file until you have successfully
-        initiated tBTC minting.
+        initiated iBTC minting.
       </BodySm>
       <BodySm mb="5">
         This file contains your BTC recovery address, the wallet's public key,

@@ -46,6 +46,7 @@ const NavbarComponent: FC<NavbarComponentProps> = ({
         borderBottom={isOverviewPage ? undefined : "1px"}
         borderColor={borderBottomColor}
         display="flex"
+        background="linear-gradient(268deg, #d6d6d6, transparent)"
       >
         <Routes>{pages.map(renderPageTitle)}</Routes>
         <Flex>
@@ -61,7 +62,7 @@ const NavbarComponent: FC<NavbarComponentProps> = ({
           )}
         </Flex>
         <Stack spacing={4} direction="row" ml="auto">
-          <DarkModeSwitcher />
+          {/* <DarkModeSwitcher /> */}
           {chainId && <NetworkButton chainId={chainId} />}
           <AccountButton {...{ openWalletModal, deactivate, account }} />
         </Stack>

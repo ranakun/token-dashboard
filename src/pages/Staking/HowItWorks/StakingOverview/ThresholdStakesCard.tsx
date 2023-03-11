@@ -12,7 +12,7 @@ export const ThresholdStakesCard: FC<
 
   return (
     <Card {...props}>
-      <LabelSm>threshold stakes</LabelSm>
+      <LabelSm>bat stakes</LabelSm>
       <BodyMd mt="5">
         Either you are a new staker, a legacy NU staker or a legacy KEEP staker
         we have a role and a place for everyone.

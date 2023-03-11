@@ -20,7 +20,7 @@ const StakeAmountCell: FC<StakeCellProps> = ({ stake }) => {
         icon={t.icon}
         iconSize="24px"
         tokenAmount={stake.tStake}
-        tokenSymbol="T"
+        tokenSymbol="BAT"
         withSymbol
         withUSDBalance
         usdBalance={usdBalance}

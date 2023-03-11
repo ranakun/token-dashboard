@@ -29,8 +29,13 @@ const StakeRewards: FC<{ stakingProvider: string }> = ({ stakingProvider }) => {
         )}
       </HStack>
       <Flex alignItems="end" justifyContent="space-between">
-        <TokenBalance tokenAmount={total} withSymbol tokenSymbol="T" isLarge />
-        {bonus !== "0" && <BodyLg>{formatTokenAmount(bonus)} T</BodyLg>}
+        <TokenBalance
+          tokenAmount={total}
+          withSymbol
+          tokenSymbol="ETH"
+          isLarge
+        />
+        {bonus !== "0" && <BodyLg>{formatTokenAmount(bonus)} ETH</BodyLg>}
       </Flex>
     </Box>
   )
