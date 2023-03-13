@@ -19,7 +19,13 @@ const SubmitTxButton: FC<Props> = ({
 
   if (active) {
     return (
-      <Button mt={6} isFullWidth onClick={onSubmit} {...buttonProps}>
+      <Button
+        mt={6}
+        isFullWidth
+        onClick={onSubmit}
+        {...buttonProps}
+        // colorScheme="gray"
+      >
         {submitText}
       </Button>
     )
