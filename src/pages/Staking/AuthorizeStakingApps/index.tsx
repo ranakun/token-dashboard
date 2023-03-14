@@ -247,7 +247,7 @@ const AuthorizeStakingAppsPage: FC = () => {
         )}
         <AlertBox status="magic" alignItems="flex-start">
           <AlertDescription color={alertTextColor}>
-            In order to earn rewards, please authorize Threshold apps to use
+            In order to earn rewards, please authorize Insaanity apps to use
             your stake. Note that you can authorize 100% of your stake for all
             of the apps. You can change this amount at any time.
           </AlertDescription>

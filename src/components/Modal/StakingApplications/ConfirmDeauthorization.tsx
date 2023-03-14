@@ -63,7 +63,7 @@ const ConfirmDeauthorizationBase: FC<ConfirmDeauthorizationProps> = ({
           <ListItem>
             <HStack justifyContent="space-between">
               <BodySm>Increase Amount</BodySm>
-              <BodySm>{formatTokenAmount(decreaseAmount)} T</BodySm>
+              <BodySm>{formatTokenAmount(decreaseAmount)} BAT</BodySm>
             </HStack>
           </ListItem>
           <ListItem>

@@ -27,7 +27,7 @@ const StakingStats: FC<StakingStatsProps> = ({
         <TokenBalance
           tokenAmount={stakeAmount}
           withSymbol
-          tokenSymbol="T"
+          tokenSymbol="BAT"
           as="p"
           fontSize="sm"
           lineHeight="unset"

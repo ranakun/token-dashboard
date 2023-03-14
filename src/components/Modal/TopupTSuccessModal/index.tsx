@@ -18,7 +18,7 @@ const TopupTSuccessModal: FC<TopupTSuccessProps> = ({
 }) => {
   return (
     <TransactionSuccessModal
-      subTitle="You have successfully topped up your T stake"
+      subTitle="You have successfully topped up your BAT stake"
       transactionHash={transactionHash}
       body={
         <StakingStats

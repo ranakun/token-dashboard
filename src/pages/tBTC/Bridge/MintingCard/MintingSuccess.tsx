@@ -50,7 +50,7 @@ const MintingSuccessComponent: FC<{
           <InlineTokenBalance
             tokenAmount={tBTCMintAmount}
             withSymbol
-            tokenSymbol="tBTC"
+            tokenSymbol="iBTC"
           />{" "}
           in around{" "}
           <Box as="span" color="brand.500">

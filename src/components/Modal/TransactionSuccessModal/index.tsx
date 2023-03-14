@@ -10,7 +10,7 @@ import {
   Button,
 } from "@chakra-ui/react"
 import Confetti from "react-confetti"
-import Threshold from "../../../static/icons/Ttoken"
+import { EthereumDark } from "../../../static/icons/EthereumDark"
 import { BodySm, H5, LineDivider } from "@threshold-network/components"
 import ViewInBlockExplorer from "../../ViewInBlockExplorer"
 import { ExplorerDataType } from "../../../utils/createEtherscanLink"
@@ -54,13 +54,19 @@ const StakingSuccessModal: FC<SuccessModalProps> = ({
         >
           <Box position="absolute" left="-20px" top="-25px" zIndex="-1">
             <Confetti
-              width={440}
-              height={250}
+              width={1440}
+              height={650}
               confettiSource={{ x: 200, y: 40, h: 100, w: 100 }}
               numberOfPieces={50}
             />
           </Box>
-          <Icon zIndex={999} height="105px" w="105px" as={Threshold} m="auto" />
+          <Icon
+            zIndex={999}
+            height="85px"
+            w="85px"
+            as={EthereumDark}
+            m="auto"
+          />
         </InfoBox>
         {body}
         {transactionHash && (

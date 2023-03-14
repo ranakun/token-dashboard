@@ -69,20 +69,20 @@ const IncreaseAuthorizationBase: FC<IncreaseAuthorizationProps> = ({
             amount at any time.
           </BodyLg>
         </InfoBox>
-        <StakingApplicationOperationIcon
+        {/* <StakingApplicationOperationIcon
           stakingApplication={stakingAppName}
           operation="increase"
           w="88px"
           h="88px"
           mb="6"
           mx="auto"
-        />
+        /> */}
         <Divider />
         <List spacing="2.5" my="6">
           <ListItem>
             <HStack justifyContent="space-between">
               <BodySm>Increase Amount</BodySm>
-              <BodySm>{formatTokenAmount(increaseAmount)} T</BodySm>
+              <BodySm>{formatTokenAmount(increaseAmount)} BAT</BodySm>
             </HStack>
           </ListItem>
           <ListItem>

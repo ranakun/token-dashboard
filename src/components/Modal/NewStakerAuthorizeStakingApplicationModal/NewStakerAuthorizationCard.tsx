@@ -119,7 +119,7 @@ export const NewStakerAuthorizationCard: FC<
               <HStack justifyContent="space-between">
                 <BodyMd fontWeight="bold">Amount</BodyMd>
                 <BodySm color="gray.500">
-                  Remaining Balance: {remainingAmount} T
+                  Remaining Balance: {remainingAmount} BAT
                 </BodySm>
               </HStack>
             }

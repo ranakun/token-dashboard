@@ -16,7 +16,7 @@ export interface BonusEligibility {
   // No unstaking after the bonus deadline and until mid-July (not even partial
   // amounts).
   hasUnstakeAfterBonusDeadline: boolean
-  // Only total staked amount before bonus deadline is taking
+  // Only total  before bonus deadline is taking
   // into account.
   eligibleStakeAmount: string
   reward: string

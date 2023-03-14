@@ -101,7 +101,7 @@ const TbtcMintingConfirmationModal: FC<TbtcMintingConfirmationModalProps> = ({
             <Skeleton isLoaded={!!tBTCMintAmount} maxW="105px" as="span">
               <InlineTokenBalance
                 tokenAmount={tBTCMintAmount}
-                tokenSymbol="tBTC"
+                tokenSymbol="iBTC"
                 withSymbol
               />
             </Skeleton>

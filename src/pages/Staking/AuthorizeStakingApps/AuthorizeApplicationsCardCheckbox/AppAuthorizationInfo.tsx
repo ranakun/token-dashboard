@@ -111,7 +111,7 @@ export const AppAuthorizationInfo: FC<AppAuthorizationInfoProps> = ({
       <HStack mb="1rem !important">
         {status === "authorized" && <CheckCircleIcon color="green.400" />}
         <LabelSm>
-          {label} App -{" "}
+          {label === "tBTC" ? "iBTC" : label} App -{" "}
           {formatPercentage(percentageAuthorized, undefined, true)}
         </LabelSm>{" "}
         <TooltipIcon label={tooltipText[stakingAppName]} />
@@ -126,7 +126,8 @@ export const AppAuthorizationInfo: FC<AppAuthorizationInfoProps> = ({
           <BodyMd mt="2.5rem !important">Total Authorized Balance</BodyMd>
           <InfoBox pr="44">
             <H3>
-              {formatTokenAmount(authorizedStake!)} <BodyLg as="span">T</BodyLg>
+              {formatTokenAmount(authorizedStake!)}{" "}
+              <BodyLg as="span">BAT</BodyLg>
             </H3>
           </InfoBox>
         </>

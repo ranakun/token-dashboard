@@ -16,7 +16,7 @@ const TransactionDetailsTable = () => {
           <BodySm color="gray.700">
             <InlineTokenBalance
               tokenAmount={tBTCMintAmount}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
               withSymbol
             />
           </BodySm>
@@ -28,7 +28,7 @@ const TransactionDetailsTable = () => {
           <BodySm color="gray.700" display="flex" alignItems="center">
             <InlineTokenBalance
               tokenAmount={mintingFee}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
               withSymbol
               precision={6}
               higherPrecision={8}
@@ -42,7 +42,7 @@ const TransactionDetailsTable = () => {
           <BodySm color="gray.700" display="flex" alignItems="center">
             <InlineTokenBalance
               tokenAmount={thresholdNetworkFee}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
               withSymbol
               precision={6}
               higherPrecision={8}

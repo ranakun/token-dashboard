@@ -166,7 +166,7 @@ const StakingApplications: PageComponent = () => {
           }
           rewardSteps={randomBeaconNodeSteps}
         />
-        <ApplicationDetailsCard
+        {/* <ApplicationDetailsCard
           preTitle="PRE APP"
           title="Proxy Re-Encryption, or PRE, is cryptographic middleware for developing privacy-preserving applications."
           description="PRE is a scalable end-to-end encryption protocol that allows a proxy entity to transform (or re-encrypt) encrypted data from one encryption key to another, without revealing the plaintext data. The nodes on the Threshold Network act as these proxy entities and use threshold cryptography to securely and cooperatively re-encrypt data for recipients based on access conditions defined by the data owner. "
@@ -183,7 +183,7 @@ const StakingApplications: PageComponent = () => {
             </ButtonLink>
           }
           rewardSteps={preNodeSteps}
-        />
+        /> */}
       </Stack>
     </Card>
   )

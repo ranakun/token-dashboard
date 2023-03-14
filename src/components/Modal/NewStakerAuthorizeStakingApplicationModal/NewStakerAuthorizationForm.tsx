@@ -84,7 +84,7 @@ const NewStakerAuthorizationForm: FC<Props & FormikProps<FormValues>> = ({
           max={tbtcInputConstraints.max}
           inputId="tbtcAmountToAuthorize"
           checkBoxId="isTbtcChecked"
-          label="tBTC"
+          label="iBTC"
           mb={6}
         />
         <NewStakerAuthorizationCard
