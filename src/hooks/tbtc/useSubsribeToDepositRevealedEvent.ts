@@ -6,13 +6,14 @@ import { useBridgeContract } from "./useBridgeContract"
 import { tbtcSlice } from "../../store/tbtc"
 import { BigNumber, Event } from "ethers"
 import { useThreshold } from "../../contexts/ThresholdContext"
+import { useTbtcState } from "../useTbtcState"
 
 export const useSubscribeToDepositRevealedEvent = () => {
   const contract = useBridgeContract()
+  const { utxo, updateState } = useTbtcState()
   const dispatch = useAppDispatch()
   const { account } = useWeb3React()
   const threshold = useThreshold()
-
   useSubscribeToContractEvent(
     contract,
     "DepositRevealed",
@@ -35,6 +36,22 @@ export const useSubscribeToDepositRevealedEvent = () => {
         amount.toString()
       )
 
+      const depositKeyFromEvent = threshold.tbtc.buildDepositKey(
+        fundingTxHash,
+        fundingOutputIndex
+      )
+      const depositKeyFromUTXO = utxo
+        ? threshold.tbtc.buildDepositKey(
+            utxo.transactionHash.toString(),
+            utxo.outputIndex,
+            "big-endian"
+          )
+        : ""
+
+      if (depositKeyFromEvent === depositKeyFromUTXO) {
+        updateState("depositRevealedTxHash", event.transactionHash)
+      }
+
       dispatch(
         tbtcSlice.actions.depositRevealed({
           fundingOutputIndex,
@@ -42,13 +59,11 @@ export const useSubscribeToDepositRevealedEvent = () => {
           amount: amountToMint,
           txHash: event.transactionHash,
           depositor: depositor,
-          depositKey: threshold.tbtc.buildDepositKey(
-            fundingTxHash,
-            fundingOutputIndex
-          ),
+          depositKey: depositKeyFromEvent,
         })
       )
     },
+
     [null, null, account]
   )
 }
