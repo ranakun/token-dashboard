@@ -37,7 +37,7 @@ export const MintingTimelineCard: FC<ComponentProps<typeof Card>> = ({
             h="16px"
           />
           <BodyMd as="span">
-            This is where your tBTC (ERC20) will be sent after minting
+            This is where your iBTC (ERC20) will be sent after minting
             initiation.
           </BodyMd>
         </ListItem>

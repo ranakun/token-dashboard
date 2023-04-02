@@ -1,4 +1,5 @@
 import { Box, Icon, Image, useColorModeValue } from "@chakra-ui/react"
+import { LabelLg } from "@threshold-network/components"
 import { Link as RouterLink } from "react-router-dom"
 import { useSidebar } from "../../hooks/useSidebar"
 import ThresholdPurple from "../../static/icons/ThresholdPurple"
@@ -8,19 +9,19 @@ import ThresholdBrandFullWhite from "../../static/images/ThresholdBrandFullWhite
 
 const BrandIcon = () => {
   const { isOpen } = useSidebar()
-  if (isOpen) {
-    return (
-      <RouterLink to="/">
-        <Image
-          src={useColorModeValue(ThresholdBrandFull, ThresholdBrandFullWhite)}
-          mx="auto"
-          marginTop="36px"
-          w="150px"
-          px="16px"
-        />
-      </RouterLink>
-    )
-  }
+  // if (isOpen) {
+  //   return (
+  //     <RouterLink to="/">
+  //       <Image
+  //         src={useColorModeValue(ThresholdBrandFull, ThresholdBrandFullWhite)}
+  //         mx="auto"
+  //         marginTop="36px"
+  //         w="150px"
+  //         px="16px"
+  //       />
+  //     </RouterLink>
+  //   )
+  // }
 
   return (
     <Box
@@ -30,10 +31,11 @@ const BrandIcon = () => {
       as={RouterLink}
       to="/"
     >
-      <Icon
+      <LabelLg fontSize={isOpen ? 18 : 10}>Insaanity</LabelLg>
+      {/* <Icon
         boxSize={8}
         as={useColorModeValue(ThresholdPurple, ThresholdWhite)}
-      />
+      /> */}
     </Box>
   )
 }

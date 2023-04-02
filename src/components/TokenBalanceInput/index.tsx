@@ -12,6 +12,7 @@ import {
   NumberFormatInput,
   NumberFormatInputValues,
   NumberFormatInputProps,
+  Image,
 } from "@threshold-network/components"
 import { createIcon } from "@chakra-ui/icons"
 import { formatUnits, parseUnits } from "@ethersproject/units"
@@ -19,6 +20,7 @@ import { Zero } from "@ethersproject/constants"
 import { BigNumber } from "@ethersproject/bignumber"
 import { web3 as web3Constants } from "../../constants"
 import HelperErrorText from "../Forms/HelperErrorText"
+import batCoin from "../../static/images/batCoin.png"
 
 export interface TokenBalanceInputProps
   extends InputProps,
@@ -94,7 +96,8 @@ const TokenBalanceInput: FC<TokenBalanceInputProps> = ({
       )}
       <InputGroup size="md">
         <InputLeftElement>
-          <Icon boxSize="20px" as={icon} />
+          {/* <Icon boxSize="20px" as={icon} /> */}
+          <Image src={batCoin} alt="" style={{ width: "20px" }}></Image>
         </InputLeftElement>
         <NumberFormatInput
           // @ts-ignore

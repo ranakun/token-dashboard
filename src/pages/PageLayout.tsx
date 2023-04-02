@@ -16,7 +16,7 @@ const PageLayout: FC<PageLayoutProps> = ({
   children,
   ...restProps
 }) => {
-  useDocumentTitle(`Threshold - ${title}`)
+  useDocumentTitle(`Insaanity - ${title}`)
   const links = pages
     ? pages.filter((_) => !_.route.hideFromMenu).map((_) => _.route)
     : []

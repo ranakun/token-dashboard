@@ -29,7 +29,7 @@ export const TbtcMintingCardTitle: FC<{
       <Icon boxSize="32px" as={tBTCFillBlack} />
       <LabelSm>
         <Box as="span" textTransform="lowercase">
-          t
+          i
         </Box>
         btc - {mintTypeToText[mintingType]}
       </LabelSm>

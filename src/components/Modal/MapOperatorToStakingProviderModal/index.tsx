@@ -118,11 +118,11 @@ const MapOperatorToStakingProviderModal: FC<
           mb={"5"}
         >
           {isOperatorMappedOnlyInRandomBeacon ? (
-            <LabelSm>tBTC app</LabelSm>
+            <LabelSm>iBTC app</LabelSm>
           ) : isOperatorMappedOnlyInTbtc ? (
             <LabelSm>random beacon app</LabelSm>
           ) : (
-            <LabelSm>tBTC + Random Beacon apps (requires 2txs)</LabelSm>
+            <LabelSm>iBTC + Random Beacon apps (requires 2txs)</LabelSm>
           )}
           <StakeAddressInfo stakingProvider={account ? account : AddressZero} />
           <MapOperatorToStakingProviderForm
@@ -151,7 +151,7 @@ const MapOperatorToStakingProviderModal: FC<
         >
           <AlertIcon h={"14px"} as={"div"} alignSelf="auto" />
           <BodyXs>
-            Take note! tBTC + Random Beacon Apps Rewards Bundle will require two
+            Take note! iBTC + Random Beacon Apps Rewards Bundle will require two
             transactions, one transaction per application.
           </BodyXs>
         </AlertBox>

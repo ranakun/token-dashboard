@@ -7,11 +7,11 @@ import {
 import { RootState } from "../store"
 
 export const useSidebar: UseSidebar = () => {
-  const isOpen = useSelector((state: RootState) => state.sidebar.isOpen)
+  const isOpen = true
   const dispatch = useDispatch()
 
-  const openSidebar = () => dispatch(openSidebarAction())
-  const closeSidebar = () => dispatch(closeSidebarAction())
+  const openSidebar = () => dispatch(true)
+  const closeSidebar = () => dispatch(false)
 
   return {
     isOpen,

@@ -30,7 +30,7 @@ export const TbtcBridgeCard: FC<ComponentProps<typeof Card>> = ({
           tBTC BRIDGE
         </LabelSm>
         <BodyMd mb="5">
-          The second generation of tBTC is a truly decentralized bridge between
+          The second generation of iBTC is a truly decentralized bridge between
           Bitcoin and Ethereum.
         </BodyMd>
         <BodyMd>

@@ -90,7 +90,7 @@ export const LegacyStakesDepositSteps: FC = () => {
         >
           <BodyMd>
             For each stake, there are three applications available. PRE does not
-            require authorization. To authorize tBTC and Random Beacon, go to
+            require authorization. To authorize iBTC and Random Beacon, go to
             the <Link to="/staking">Staking Page</Link> and select “Configure
             Stake”.
           </BodyMd>
@@ -196,7 +196,7 @@ const StakingTimeline: FC<{ statuses?: FlowStepStatus[] } & StackProps> = ({
         <BoxLabel status="secondary">Staking Timeline</BoxLabel>
         <FlowStep
           size="sm"
-          title="Stake Tokens"
+          title="Stake BAT"
           preTitle="Step 1"
           status={statuses[0] ?? FlowStepStatus.active}
         >
@@ -212,7 +212,7 @@ const StakingTimeline: FC<{ statuses?: FlowStepStatus[] } & StackProps> = ({
           status={statuses[1] ?? FlowStepStatus.inactive}
         >
           For each stake, there are three applications available. PRE does not
-          require authorization. To authorize tBTC and Random Beacon, go to the{" "}
+          require authorization. To authorize iBTC and Random Beacon, go to the{" "}
           <Link to="/staking">Staking page</Link> and select “Configure Stake”.
         </FlowStep>
         <FlowStep

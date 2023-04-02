@@ -33,7 +33,7 @@ export const UnmintingTimeline: FC = () => {
         stepText="Step 2"
         helperLabelText="ACTION ON BITCOIN NETWORK"
         title="Make a BTC deposit"
-        description="Send any amount of BTC to this unique BTC Deposit Address. The amount you send is the amount will be minted as tBTC."
+        description="Send any amount of BTC to this unique BTC Deposit Address. The amount you send is the amount will be minted as iBTC."
         imageSrc={tbtcMintingStep1}
       />
       <TimelineItem
@@ -46,7 +46,7 @@ export const UnmintingTimeline: FC = () => {
         stepText="Step 3"
         helperLabelText="ACTION ON ETHEREUM NETWORK"
         title="Initiate minting"
-        description="Minting tBTC does not require you to wait for the Bitcoin confirmation. Sign an Ethereum transaction in your wallet and your tBTC will arrive within the next bridge crossing."
+        description="Minting iBTC does not require you to wait for the Bitcoin confirmation. Sign an Ethereum transaction in your wallet and your iBTC will arrive within the next bridge crossing."
         imageSrc={tbtcMintingStep1}
       />
       <Divider />

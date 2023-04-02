@@ -2,7 +2,7 @@ import { threshold } from "./getThresholdLib"
 import { StakingAppName } from "../store/staking-applications"
 
 const stakingAppNameToAppLabel: Record<StakingAppName, string> = {
-  tbtc: "tBTC",
+  tbtc: "iBTC",
   randomBeacon: "Random Beacon",
 }
 

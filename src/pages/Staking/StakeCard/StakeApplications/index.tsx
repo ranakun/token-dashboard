@@ -33,7 +33,7 @@ const StakeApplications: FC<{ stakingProvider: string }> = ({
       <List spacing={4}>
         <AuthorizeApplicationRow
           as="li"
-          label="tBTC"
+          label="iBTC"
           isAuthorized={tbtcApp.isAuthorized}
           percentage={tbtcApp.percentage}
           stakingProvider={stakingProvider}
@@ -45,13 +45,13 @@ const StakeApplications: FC<{ stakingProvider: string }> = ({
           percentage={randomBeaconApp.percentage}
           stakingProvider={stakingProvider}
         />
-        <AuthorizeApplicationRow
+        {/* <AuthorizeApplicationRow
           as="li"
           label="PRE"
           isAuthorized={true}
           percentage={isInactiveStake ? 0 : 100}
           stakingProvider={stakingProvider}
-        />
+        /> */}
       </List>
       <ButtonLink
         mt="5"

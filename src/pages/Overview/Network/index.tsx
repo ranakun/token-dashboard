@@ -15,9 +15,9 @@ const Network: PageComponent = () => {
 
   return (
     <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={4}>
-      <WalletBalances />
+      {/* <WalletBalances /> */}
       <Stack spacing={4}>
-        <StakingOverview />
+        {/* <StakingOverview /> */}
         <TotalValueLocked totalValueLocked={data.total} />
       </Stack>
     </SimpleGrid>

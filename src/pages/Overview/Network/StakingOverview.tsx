@@ -24,7 +24,14 @@ const StakingOverview: FC = () => {
           isLarge
         />
       </InfoBox>
-      <ButtonLink size="lg" isFullWidth mt={4} to="/staking">
+      <ButtonLink
+        size="lg"
+        isFullWidth
+        mt={4}
+        to="/staking"
+        colorScheme="gray"
+        color="black"
+      >
         Go to Staking
       </ButtonLink>
       <StakingContractLearnMore mt="4" />

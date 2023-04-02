@@ -1,4 +1,4 @@
-import { FC, Ref, useRef, useState } from "react"
+import { FC, Ref, useEffect, useRef, useState } from "react"
 import { FormikErrors, FormikProps, withFormik } from "formik"
 import { Button, BodyMd } from "@threshold-network/components"
 import { useTbtcState } from "../../../../hooks/useTbtcState"
@@ -39,7 +39,7 @@ const MintingProcessFormBase: FC<ComponentProps & FormikProps<FormValues>> = ({
       <FormikInput
         name="ethAddress"
         label="ETH Address"
-        tooltip="ETH address is prepopulated with your wallet address. This is the address where you'll receive your tBTC."
+        tooltip="ETH address is prepopulated with your wallet address. This is the address where you'll receive your iBTC."
         mb={6}
         isReadOnly={true}
       />
@@ -151,6 +151,11 @@ export const ProvideDataComponent: FC<{
     updateState("mintingStep", MintingStep.Deposit)
   }
 
+  useEffect(() => {
+    // validateETHAddress(values.ethAddress)
+    console.log(formRef?.current?.values)
+  }, [formRef.current?.values])
+
   return (
     <>
       <TbtcMintingCardTitle onPreviousStepClick={onPreviousStepClick} />
@@ -173,6 +178,7 @@ export const ProvideDataComponent: FC<{
         type="submit"
         form="tbtc-minting-data-form"
         isFullWidth
+        style={{ background: "grey" }}
       >
         Generate Deposit Address
       </Button>

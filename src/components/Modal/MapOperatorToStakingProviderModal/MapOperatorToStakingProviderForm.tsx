@@ -64,7 +64,7 @@ const validateInputtedOperatorAddress = async (
       !isSameETHAddress(operator, mappedOperatorTbtc)
     ) {
       validationMsg =
-        "The operator address doesn't match the one used in tbtc app"
+        "The operator address doesn't match the one used in ibtc app"
     }
   } catch (error) {
     console.error("`MapOperatorToStakingProviderForm` validation error.", error)

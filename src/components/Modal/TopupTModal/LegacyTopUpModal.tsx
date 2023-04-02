@@ -74,7 +74,7 @@ const LegacyTopUpModal: FC<BaseModalProps & { stake: StakeData }> = ({
           <UnorderedList spacing="6">
             <ListItem sx={bulletColorStyle}>
               <BodySm>
-                You can top-up your legacy stake with liquid T tokens in this
+                You can top-up your legacy stake with liquid BAT tokens in this
                 modal
               </BodySm>
             </ListItem>
@@ -89,7 +89,7 @@ const LegacyTopUpModal: FC<BaseModalProps & { stake: StakeData }> = ({
         </InfoBox>
         <Tabs isFitted>
           <TabList mb="8">
-            <Tab>Top-up T</Tab>
+            <Tab>Top-up BAT</Tab>
 
             {stake.stakeType !== StakeType.T && <Tab>Top-up legacy stake</Tab>}
           </TabList>

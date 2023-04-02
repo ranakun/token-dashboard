@@ -26,7 +26,11 @@ const StakeBalance: FC<{
         Total Staked Balance
       </BodyMd>
       <InfoBox m="0">
-        <TokenBalance tokenAmount={totalInTStake} withSymbol tokenSymbol="T" />
+        <TokenBalance
+          tokenAmount={totalInTStake}
+          withSymbol
+          tokenSymbol="BAT"
+        />
       </InfoBox>
     </>
   )

@@ -38,8 +38,8 @@ const randomBeaconNodeSteps = [
   "Have a staked balance",
 ]
 const tbtcNodeSteps = [
-  "Run a tBTC node",
-  "Authorize a portion of your stake to tBTC",
+  "Run a iBTC node",
+  "Authorize a portion of your stake to iBTC",
   "Have a staked balance",
 ]
 
@@ -123,14 +123,14 @@ const StakingApplications: PageComponent = () => {
       </Stack>
       <Stack spacing={6}>
         <ApplicationDetailsCard
-          preTitle="tBTC APP"
-          title="tBTC is the only truly decentralized solution for bridging Bitcoin to Ethereum."
-          description="tBTC replaces a centralized custodian with a randomly selected group of operators running nodes on the Threshold Network. This group of independent operators works together to secure your deposited Bitcoin through threshold cryptography."
+          preTitle="iBTC APP"
+          title="iBTC is the only truly decentralized solution for bridging Bitcoin to Ethereum."
+          description="iBTC replaces a centralized custodian with a randomly selected group of operators running nodes on the Threshold Network. This group of independent operators works together to secure your deposited Bitcoin through threshold cryptography."
           imgSrc={iconMap.tbtc[colorMode]}
           ctaButtons={
             <VStack mb={6}>
               <ButtonLink to="/staking" isFullWidth>
-                Authorize tBTC
+                Authorize iBTC
               </ButtonLink>
               <ButtonLink
                 isExternal
@@ -138,7 +138,7 @@ const StakingApplications: PageComponent = () => {
                 isFullWidth
                 variant="outline"
               >
-                tBTC Node Docs
+                iBTC Node Docs
               </ButtonLink>
             </VStack>
           }

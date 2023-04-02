@@ -2,7 +2,7 @@ import { JsonRpcProvider, Provider } from "@ethersproject/providers"
 import { Signer } from "ethers"
 import { Threshold } from "../threshold-ts"
 import { ChainID, EnvVariable } from "../enums"
-import { getEnvVariable, supportedChainId } from "../utils/getEnvVariable"
+import { getEnvVariable, supportedChainId } from "./getEnvVariable"
 import { MockBitcoinClient } from "../tbtc/mock-bitcoin-client"
 import {
   BitcoinConfig,

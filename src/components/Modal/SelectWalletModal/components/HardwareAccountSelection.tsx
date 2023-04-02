@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react"
 import shortenAddress from "../../../../utils/shortenAddress"
 import { WalletConnectionModalProps } from "../../../../types"
-import { WalletConnectionModalBase } from "../components"
+import { WalletConnectionModalBase } from "."
 import { HiChevronLeft, HiChevronRight } from "react-icons/all"
 import createEtherscanLink, {
   ExplorerDataType,

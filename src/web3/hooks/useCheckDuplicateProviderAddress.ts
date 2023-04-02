@@ -2,7 +2,7 @@ import { useCallback } from "react"
 import { BigNumber } from "ethers"
 import { useTStakingContract } from "./useTStakingContract"
 import { useKeepTokenStakingContract } from "./useKeepTokenStakingContract"
-import { isAddressZero } from "../../web3/utils"
+import { isAddressZero } from "../utils"
 import { useThreshold } from "../../contexts/ThresholdContext"
 
 const useCheckDuplicateProviderAddress = (): ((

@@ -3,7 +3,7 @@ import { AddressZero } from "@ethersproject/constants"
 import { useVendingMachineContract } from "./useVendingMachineContract"
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import { UpgredableToken } from "../../types"
-import { isAddressZero, isSameETHAddress } from "../../web3/utils"
+import { isAddressZero, isSameETHAddress } from "../utils"
 import { Token } from "../../enums"
 
 // Mutex implementation adapted from

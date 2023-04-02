@@ -44,7 +44,7 @@ export const useRegisterMultipleOperatorsTransaction = () => {
           throw new Error("Random beacon app already has mapped operator!")
 
         if (isOperatorMappedOnlyInTbtc)
-          throw new Error("Tbtc app already have mapped operator!")
+          throw new Error("ibtc app already have mapped operator!")
 
         // TODO: might also add a check if the operator is already used by another staking provider
 

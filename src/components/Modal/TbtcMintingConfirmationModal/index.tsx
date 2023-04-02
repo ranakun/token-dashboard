@@ -87,7 +87,7 @@ const TbtcMintingConfirmationModal: FC<TbtcMintingConfirmationModalProps> = ({
 
   return (
     <>
-      <ModalHeader>Initiate minting tBTC</ModalHeader>
+      <ModalHeader>Initiate minting iBTC</ModalHeader>
       <ModalCloseButton />
       <ModalBody>
         <InfoBox variant="modal" mb="6">
@@ -107,7 +107,7 @@ const TbtcMintingConfirmationModal: FC<TbtcMintingConfirmationModalProps> = ({
             </Skeleton>
           </H5>
           <BodyLg>
-            Minting tBTC is a process that requires one transaction.
+            Minting iBTC is a process that requires one transaction.
           </BodyLg>
         </InfoBox>
         <TransactionDetailsTable />
@@ -117,7 +117,12 @@ const TbtcMintingConfirmationModal: FC<TbtcMintingConfirmationModalProps> = ({
         </BodySm>
       </ModalBody>
       <ModalFooter>
-        <Button onClick={closeModal} variant="outline" mr={2}>
+        <Button
+          onClick={closeModal}
+          variant="outline"
+          mr={2}
+          colorScheme="gray"
+        >
           Cancel
         </Button>
         <Button

@@ -11,23 +11,23 @@ import {
   useColorModeValue,
 } from "@threshold-network/components"
 
-import AuthorizingApplicationsIllustrationLight from "../../../../static/images/AuthorizingApplicationsIllustrationLight.png"
-import AuthorizingApplicationsIllustrationDark from "../../../../static/images/AuthorizingApplicationsIllustrationDark.png"
+// import AuthorizingApplicationsIllustrationLight from "../../../../static/images/AuthorizingApplicationsIllustrationLight.png"
+import ranadid from "../../../../static/images/ranadid.png"
 import Link from "../../../../components/Link"
 
 export const AuthorizingApplicationsCard: FC<ComponentProps<typeof Card>> = (
   props
 ) => {
   const authorizingApplicationsIllustration = useColorModeValue(
-    AuthorizingApplicationsIllustrationLight,
-    AuthorizingApplicationsIllustrationDark
+    ranadid,
+    ranadid
   )
 
   return (
     <Card {...props} h="fit-content">
       <LabelSm>Authorizing Applications</LabelSm>
       <BodyMd my={6}>
-        In order to earn rewards, you can authorize Threshold applications to
+        In order to earn rewards, you can authorize Insaanity applications to
         use your stake. You can read more about the applications{" "}
         <Link to="/staking/how-it-works/applications">here</Link>. Note that you
         can authorize 100% of your stake for all of the apps.

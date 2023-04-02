@@ -30,7 +30,7 @@ const NewTBTCAppBase: FC<BaseModalProps> = ({ closeModal }) => {
           mx="auto"
           mb="14"
         />
-        <H5 mb="2">The NEW tBTC dApp is here!</H5>
+        <H5 mb="2">The NEW iBTC dApp is here!</H5>
         <BodyLg mb="12" color="gray.500">
           Take note of the following before you proceed.
         </BodyLg>
