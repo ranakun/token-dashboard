@@ -37,6 +37,7 @@ import TBTCToken from "../../artifacts/TBTC.json"
 import { BigNumber, BigNumberish, Contract } from "ethers"
 import { ContractCall, IMulticall } from "../multicall"
 import { Interface } from "ethers/lib/utils"
+import { BlockTag } from "@ethersproject/abstract-provider"
 
 export enum BridgeHistoryStatus {
   PENDING = "PENDING",
@@ -58,6 +59,7 @@ interface RevealedDepositEvent {
   fundingOutputIndex: string
   depositKey: string
   txHash: string
+  blockNumber: BlockTag
 }
 
 type BitcoinTransactionHashByteOrder = "little-endian" | "big-endian"
@@ -195,6 +197,8 @@ export interface ITBTC {
     depositOutputIndex: number,
     txHashByteOrder?: BitcoinTransactionHashByteOrder
   ): string
+
+  findAllRevealedDeposits(depositor: string): Promise<RevealedDepositEvent[]>
 }
 
 export class TBTC implements ITBTC {
@@ -211,15 +215,6 @@ export class TBTC implements ITBTC {
   private _depositRefundLocktimDuration = 23328000
   private _bitcoinConfig: BitcoinConfig
   private readonly _satoshiMultiplier = BigNumber.from(10).pow(10)
-
-  /**
-   * Maps the network that is currently used for bitcoin, so that it use "main"
-   * instead of "mainnet". This is specific to the tbtc-v2.ts lib.
-   */
-  private tbtcLibNetworkMap: Record<BitcoinNetwork, "main" | "testnet"> = {
-    testnet: "testnet",
-    mainnet: "main",
-  }
 
   constructor(
     ethereumConfig: EthereumConfig,
@@ -334,8 +329,11 @@ export class TBTC implements ITBTC {
   calculateDepositAddress = async (
     depositScriptParameters: DepositScriptParameters
   ): Promise<string> => {
-    const network = this.tbtcLibNetworkMap[this.bitcoinNetwork]
-    return await calculateDepositAddress(depositScriptParameters, network, true)
+    return await calculateDepositAddress(
+      depositScriptParameters,
+      this.bitcoinNetwork,
+      true
+    )
   }
 
   findAllUnspentTransactionOutputs = async (
@@ -461,7 +459,7 @@ export class TBTC implements ITBTC {
 
   bridgeTxHistory = async (depositor: string): Promise<BridgeTxHistory[]> => {
     // We can assume that all revealed deposits have `PENDING` status.
-    const revealedDeposits = await this._findAllRevealedDeposits(depositor)
+    const revealedDeposits = await this.findAllRevealedDeposits(depositor)
     const depositKeys = revealedDeposits.map((_) => _.depositKey)
 
     const mintedDepositEvents = await this._findAllMintedDeposits(
@@ -512,7 +510,7 @@ export class TBTC implements ITBTC {
     })
   }
 
-  private _findAllRevealedDeposits = async (
+  findAllRevealedDeposits = async (
     depositor: string
   ): Promise<RevealedDepositEvent[]> => {
     const deposits = await getContractPastEvents(this._bridgeContract, {
@@ -538,6 +536,7 @@ export class TBTC implements ITBTC {
           fundingOutputIndex,
           depositKey,
           txHash: deposit.transactionHash,
+          blockNumber: deposit.blockNumber,
         }
       })
       .reverse()
