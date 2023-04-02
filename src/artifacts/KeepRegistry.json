@@ -1,0 +1,99 @@
+{
+  "address": "0x67AE877147b7d275198aDBA06A60f97965C0dFF6",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operatorContract",
+          "type": "address"
+        }
+      ],
+      "name": "OperatorContractApproved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operatorContract",
+          "type": "address"
+        }
+      ],
+      "name": "approveOperatorContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "registryKeeper",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xf8d32d40cbaa69337c9ca4cfd8cefe4bb9da8d680ccf9312b4fea4cc3fd29086",
+  "receipt": {
+    "to": null,
+    "from": "0x018c56a5a8b93cB3Bc03005f229AE3D46cD3E7B5",
+    "contractAddress": "0x67AE877147b7d275198aDBA06A60f97965C0dFF6",
+    "transactionIndex": 86,
+    "gasUsed": "137624",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1abe3cccc6ac0635d4e2178f11c24e8d2a5c8513b67f91c4c8d9a4d02d66765e",
+    "transactionHash": "0xf8d32d40cbaa69337c9ca4cfd8cefe4bb9da8d680ccf9312b4fea4cc3fd29086",
+    "logs": [],
+    "blockNumber": 8529869,
+    "cumulativeGasUsed": "12377001",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "22c1c09bba6d1078c29775cc67829122",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operatorContract\",\"type\":\"address\"}],\"name\":\"OperatorContractApproved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operatorContract\",\"type\":\"address\"}],\"name\":\"approveOperatorContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registryKeeper\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/KeepRegistryStub.sol\":\"KeepRegistryStub\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":10},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0xbbc8ac883ac3c0078ce5ad3e288fbb3ffcc8a30c3a98c0fda0114d64fc44fca2\",\"license\":\"MIT\"},\"contracts/test/IKeepRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0-or-later\\r\\n\\r\\npragma solidity 0.8.9;\\r\\n\\r\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\r\\n\\r\\ninterface IKeepRegistry {\\r\\n    function approveOperatorContract(address operatorContract) external;\\r\\n\\r\\n    function registryKeeper() external view returns (address);\\r\\n}\\r\\n\",\"keccak256\":\"0x0085812fda3b0f68bf77e9a9bc34fe957610c16827f2089bc7270c8d37806d6f\",\"license\":\"GPL-3.0-or-later\"},\"contracts/test/KeepRegistryStub.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0-or-later\\r\\n\\r\\npragma solidity 0.8.9;\\r\\n\\r\\nimport \\\"./IKeepRegistry.sol\\\";\\r\\n\\r\\ncontract KeepRegistryStub is IKeepRegistry {\\r\\n    address public registryKeeper;\\r\\n\\r\\n    event OperatorContractApproved(address operatorContract);\\r\\n\\r\\n    constructor() public {\\r\\n        registryKeeper = msg.sender;\\r\\n    }\\r\\n\\r\\n    function approveOperatorContract(address operatorContract) external {\\r\\n        emit OperatorContractApproved(operatorContract);\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x2d3bed2545d277660d3fe2cb4f1616834b3668593d893fc66dbc19bcd81af112\",\"license\":\"GPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163317905561011e806100326000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806302db580b14603757806384c07bd2146048575b600080fd5b6046604236600460a6565b606e565b005b600054605a906001600160a01b031681565b6040516065919060d4565b60405180910390f35b7fb5d7fbd1d67a09be2dd3ba169be0ebfb43f1d3fd31b12e9dc9e5bd98517bfafb81604051609b919060d4565b60405180910390a150565b60006020828403121560b757600080fd5b81356001600160a01b038116811460cd57600080fd5b9392505050565b6001600160a01b039190911681526020019056fea264697066735822122099811ea4dbe47872529de378d38cdf9484881cfa4ef029cd7915ca8cddc254cf64736f6c63430008090033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806302db580b14603757806384c07bd2146048575b600080fd5b6046604236600460a6565b606e565b005b600054605a906001600160a01b031681565b6040516065919060d4565b60405180910390f35b7fb5d7fbd1d67a09be2dd3ba169be0ebfb43f1d3fd31b12e9dc9e5bd98517bfafb81604051609b919060d4565b60405180910390a150565b60006020828403121560b757600080fd5b81356001600160a01b038116811460cd57600080fd5b9392505050565b6001600160a01b039190911681526020019056fea264697066735822122099811ea4dbe47872529de378d38cdf9484881cfa4ef029cd7915ca8cddc254cf64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 16763,
+        "contract": "contracts/test/KeepRegistryStub.sol:KeepRegistryStub",
+        "label": "registryKeeper",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

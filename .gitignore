@@ -1,0 +1,23 @@
+# Local
+.DS_Store
+.idea
+.eslintcache
+
+# IDEs
+.vscode/
+.idea/
+
+# Generated
+build/
+dist/
+external/
+
+# Storybook
+storybook-static
+build-storybook.log
+cypress/fixtures
+cypress/plugins
+
+# Yarn
+node_modules/
+yarn-error.log
