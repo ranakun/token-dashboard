@@ -1,4 +1,4 @@
-import { AsyncThunk, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 import { PayloadAction } from "@reduxjs/toolkit/dist/createAction"
 import {
   MintingStep,
@@ -15,29 +15,6 @@ import {
   findUtxoEffect,
   fetchUtxoConfirmationsEffect,
 } from "./effects"
-import { curveAPI } from "../../utils/curveAPI"
-import { CurveFactoryPoolId } from "../../enums"
-
-export type CurvePoolData = {
-  url: string
-  address: string
-  apy: number[]
-  tvl: number
-}
-
-export const fetchCurveFactoryPoolData: AsyncThunk<CurvePoolData, void, {}> =
-  createAsyncThunk("tbtc/fetchFactoryPool", async () => {
-    const factoryPool = await curveAPI.fetchFactoryPool(
-      CurveFactoryPoolId.TBTC_WBTC_SBTC
-    )
-
-    return {
-      address: factoryPool.address,
-      url: factoryPool.poolUrls.deposit[0],
-      apy: factoryPool.gaugeCrvApy,
-      tvl: factoryPool.usdTotal,
-    }
-  })
 
 export const tbtcSlice = createSlice({
   name: "tbtc",
@@ -143,13 +120,6 @@ export const tbtcSlice = createSlice({
         }
       }>
     ) => {},
-  },
-  extraReducers: (builder) => {
-    builder.addCase(fetchCurveFactoryPoolData.fulfilled, (state, action) => {
-      const curveFactoryPool = action.payload
-
-      state.curveTBTCPool = curveFactoryPool
-    })
   },
 })
 
