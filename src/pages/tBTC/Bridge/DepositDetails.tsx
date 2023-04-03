@@ -27,8 +27,9 @@ import {
   H5,
   SkeletonText,
   SkeletonCircle,
+  Image,
 } from "@threshold-network/components"
-import { IoTime as TimeIcon } from "react-icons/all"
+import { IoCheckmarkSharp, IoTime as TimeIcon } from "react-icons/all"
 import { InlineTokenBalance } from "../../../components/TokenBalance"
 import {
   Timeline,
@@ -62,6 +63,9 @@ import { tbtcSlice } from "../../../store/tbtc"
 import { ExplorerDataType } from "../../../utils/createEtherscanLink"
 import { PageComponent } from "../../../types"
 import mainCardBackground from "../../../static/images/minting-completed-card-bg.png"
+import { DotsLoadingIndicator } from "../../../components/DotsLoadingIndicator"
+import tBTCIcon from "../../../static/images/tBTC.svg"
+import BitcoinIcon from "../../../static/images/bitcoin.svg"
 
 export const DepositDetails: PageComponent = () => {
   const { depositKey } = useParams()
@@ -210,7 +214,7 @@ export const DepositDetails: PageComponent = () => {
                 >
                   <Icon as={TimeIcon} /> ~3 hours minting time
                 </Badge>
-                <List color="gray.500" spacing="2">
+                <List color="gray.500" spacing="2" mb="20">
                   {transactions
                     .filter((item) => !!item.txHash)
                     .map((item) => (
@@ -227,9 +231,16 @@ export const DepositDetails: PageComponent = () => {
                     ))}
                 </List>
                 {inProgressStep !== "completed" && (
-                  <MintingProcessResource
-                    {...stepToResourceData[inProgressStep]}
-                  />
+                  <>
+                    <HStack spacing="4" mt="auto" mb="10">
+                      <Image src={BitcoinIcon} />
+                      <DotsLoadingIndicator />
+                      <Image src={tBTCIcon} />
+                    </HStack>
+                    <MintingProcessResource
+                      {...stepToResourceData[inProgressStep]}
+                    />
+                  </>
                 )}
               </Flex>
             </Stack>
@@ -364,7 +375,21 @@ const DepositDetailsTimeline: FC<DepositDetailsTimelineProps> = ({
       {items.map((item) => (
         <TimelineItem key={item.id} status={item.status}>
           <TimelineBreakpoint>
-            <TimelineDot />
+            <TimelineDot position="relative">
+              {item.status === "active" && (
+                <Icon
+                  as={IoCheckmarkSharp}
+                  position="absolute"
+                  color="white"
+                  w="22px"
+                  h="22px"
+                  m="auto"
+                  left="0"
+                  right="0"
+                  textAlign="center"
+                />
+              )}
+            </TimelineDot>
             <TimelineConnector />
           </TimelineBreakpoint>
           <TimelineContent>{item.text}</TimelineContent>
