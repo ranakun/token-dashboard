@@ -85,7 +85,7 @@ export const DepositDetails: PageComponent = () => {
     CurveFactoryPoolId.TBTC_WBTC_SBTC
   )
 
-  const [inProgressStep, setInProgressStep] =
+  const [mintingProgressStep, setMintingProgressStep] =
     useState<DepositDetailsTimelineStep>("bitcoin-confirmations")
   const { mintingRequestedTxHash, mintingFinalizedTxHash } =
     useSubscribeToOptimisticMintingEvents(depositKey)
@@ -135,8 +135,8 @@ export const DepositDetails: PageComponent = () => {
     if (!confirmations || !requiredConfirmations || shouldStartFromFirstStep)
       return
 
-    setInProgressStep(
-      getInProgressStep({
+    setMintingProgressStep(
+      getMintingProgressStep({
         confirmations,
         requiredConfirmations,
         optimisticMintingFinalizedTxHash,
@@ -171,7 +171,7 @@ export const DepositDetails: PageComponent = () => {
   ]
 
   const mainCardProps =
-    inProgressStep === "completed"
+    mintingProgressStep === "completed"
       ? {
           backgroundImage: mainCardBackground,
           backgroundPosition: "bottom -10px right",
@@ -182,8 +182,8 @@ export const DepositDetails: PageComponent = () => {
   return (
     <DepositDetailsPageContext.Provider
       value={{
-        step: inProgressStep,
-        updateStep: setInProgressStep,
+        step: mintingProgressStep,
+        updateStep: setMintingProgressStep,
         btcTxHash: btcDepositTxHash,
         optimisticMintingRequestedTxHash:
           optimisticMintingRequestedTxHash ?? mintingRequestedTxHash,
@@ -214,9 +214,11 @@ export const DepositDetails: PageComponent = () => {
                 <Flex mb="4" alignItems="center" textStyle="bodyLg">
                   <BodyLg>
                     <Box as="span" fontWeight="600" color="brand.500">
-                      {inProgressStep === "completed" ? "Minted" : "Minting"}
+                      {mintingProgressStep === "completed"
+                        ? "Minted"
+                        : "Minting"}
                     </Box>
-                    {inProgressStep !== "completed" && ` - In progress...`}
+                    {mintingProgressStep !== "completed" && ` - In progress...`}
                   </BodyLg>{" "}
                   <InlineTokenBalance
                     tokenAmount={amount || "0"}
@@ -227,7 +229,7 @@ export const DepositDetails: PageComponent = () => {
                 </Flex>
                 <DepositDetailsTimeline
                   // isCompleted
-                  inProgressStep={inProgressStep}
+                  inProgressStep={mintingProgressStep}
                 />
                 <StepSwitcher />
               </Flex>
@@ -268,7 +270,7 @@ export const DepositDetails: PageComponent = () => {
                       </ListItem>
                     ))}
                 </List>
-                {inProgressStep !== "completed" && (
+                {mintingProgressStep !== "completed" && (
                   <>
                     <HStack spacing="4" mt="auto" mb="10" alignSelf="center">
                       <Image src={BitcoinIcon} />
@@ -276,13 +278,13 @@ export const DepositDetails: PageComponent = () => {
                       <Image src={tBTCIcon} />
                     </HStack>
                     <MintingProcessResource
-                      {...stepToResourceData[inProgressStep]}
+                      {...stepToResourceData[mintingProgressStep]}
                     />
                   </>
                 )}
               </Flex>
             </Stack>
-            {inProgressStep !== "completed" && (
+            {mintingProgressStep !== "completed" && (
               <>
                 <Divider />
                 <Flex mt="8" alignItems="center">
@@ -299,7 +301,7 @@ export const DepositDetails: PageComponent = () => {
           </>
         )}
       </Card>
-      {inProgressStep === "completed" && (
+      {mintingProgressStep === "completed" && (
         <ExternalPool
           title={"tBTC Curve Pool"}
           externalPoolData={{ ...tBTCWBTCSBTCPoolData }}
@@ -449,7 +451,7 @@ const DepositDetailsTimeline: FC<DepositDetailsTimelineProps> = ({
   )
 }
 
-const getInProgressStep = (
+const getMintingProgressStep = (
   depositDetails?: Omit<
     DepositData,
     | "depositRevealedTxHash"
