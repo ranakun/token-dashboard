@@ -17,7 +17,7 @@ const HowItWorksPage: PageComponent = (props) => {
         <VStack spacing="4">
           <JSONFileCard />
           <ContractsCard />
-          <AuditsCard />
+          {/* <AuditsCard /> */}
         </VStack>
       </SimpleGrid>
     </>

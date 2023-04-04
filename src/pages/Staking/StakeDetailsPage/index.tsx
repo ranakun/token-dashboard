@@ -134,9 +134,9 @@ const StakeDetailsPage: FC = () => {
             isAddress
             address={stake.beneficiary}
           />
-          <StakeDetailRow label="PRE Node Status">
+          {/* <StakeDetailRow label="PRE Node Status">
             <NodeStatusLabel isAuthorized />
-          </StakeDetailRow>
+          </StakeDetailRow> */}
           <StakeDetailRow label="tBTC Node Status">
             <NodeStatusLabel isAuthorized={tbtcApp.isAuthorized} />
           </StakeDetailRow>

@@ -1,5 +1,5 @@
 import { Flex, Icon, Spinner as ChakraSpinner } from "@chakra-ui/react"
-import Threshold from "../static/icons/Ttoken"
+import { EthereumDark } from "../static/icons/EthereumDark"
 
 // Maybe we should build this component in Chakra way and make it more
 // reusable.
@@ -14,7 +14,7 @@ const Spinner = () => {
         height="120px"
         width="120px"
       />
-      <Icon position="absolute" height="60px" w="60px" as={Threshold} />
+      <Icon position="absolute" height="60px" w="60px" as={EthereumDark} />
     </Flex>
   )
 }
