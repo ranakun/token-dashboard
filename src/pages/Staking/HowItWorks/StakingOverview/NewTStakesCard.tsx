@@ -10,9 +10,9 @@ import StakingChecklist from "../../../../components/StakingTimeline"
 export const NewTStakesCard: FC<ComponentProps<typeof Card>> = (props) => {
   return (
     <Card {...props}>
-      <LabelSm>new threshold stakes</LabelSm>
+      <LabelSm>new Insaanity stakes</LabelSm>
       <BodyMd mt="5" mb="5">
-        Before you start staking on Threshold Network, make sure you are aware
+        Before you start staking on Insaanity Network, make sure you are aware
         of the following requirements:
       </BodyMd>
       <StakingChecklist

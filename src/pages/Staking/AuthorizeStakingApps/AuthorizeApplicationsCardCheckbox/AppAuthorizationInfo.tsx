@@ -45,7 +45,7 @@ const TooltipLearnMoreLink = () => {
 const tooltipText: Record<StakingAppName | "pre", JSX.Element> = {
   tbtc: (
     <>
-      The tBTC application is the first decentralized bridge from Bitcoin to
+      The iBTC application is the first decentralized bridge from Bitcoin to
       Ethereum. Learn more <TooltipLearnMoreLink />.
     </>
   ),
@@ -126,7 +126,8 @@ export const AppAuthorizationInfo: FC<AppAuthorizationInfoProps> = ({
           <BodyMd mt="2.5rem !important">Total Authorized Balance</BodyMd>
           <InfoBox pr="44">
             <H3>
-              {formatTokenAmount(authorizedStake!)} <BodyLg as="span">T</BodyLg>
+              {formatTokenAmount(authorizedStake!)}{" "}
+              <BodyLg as="span">BAT</BodyLg>
             </H3>
           </InfoBox>
         </>

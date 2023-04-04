@@ -29,8 +29,8 @@ export const MintingTimelineStep1: FC<MintingTimelineStepProps> = ({
       title="Provide Data"
       description={
         <>
-          Provide an ETH address and a BTC Recovery address to generate an
-          unique BTC deposit address.{" "}
+          Provide an ETH address and a BTC Recovery address to generate a unique
+          BTC deposit address.{" "}
           <Link isExternal href={ExternalHref.btcRecoveryAddress}>
             Read more
           </Link>
@@ -57,7 +57,7 @@ export const MintingTimelineStep2: FC<MintingTimelineStepProps> = ({
       title="Make a BTC deposit"
       // TODO: Make sure this copy is a final one and can be the same on the How
       // it Works page and minting timeline in deposit flow.
-      description="Send minimum 0.01&nbsp;BTC to this unique BTC Deposit Address. The amount sent will be used to mint tBTC."
+      description="Send minimum 0.01&nbsp;BTC to this unique BTC Deposit Address. The amount sent will be used to mint iBTC."
       imageSrc={tbtcMintingStep2}
       {...restProps}
     />
@@ -77,7 +77,7 @@ export const MintingTimelineStep3: FC<MintingTimelineStepProps> = ({
       stepText="Step 3"
       helperLabelText="ACTION ON ETHEREUM NETWORK"
       title="Initiate minting"
-      description="Minting tBTC does not require you to wait for the Bitcoin confirmations. Sign an Ethereum transaction in your wallet and your tBTC will arrive in around 1 to 3 hours."
+      description="Minting iBTC does not require you to wait for the Bitcoin confirmations. Sign an Ethereum transaction in your wallet and your iBTC will arrive in around 1 to 3 hours."
       imageSrc={tbtcMintingStep3}
       {...restProps}
     />

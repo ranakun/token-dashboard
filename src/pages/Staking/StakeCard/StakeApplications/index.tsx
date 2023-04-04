@@ -33,7 +33,7 @@ const StakeApplications: FC<{ stakingProvider: string }> = ({
       <List spacing={4}>
         <AuthorizeApplicationRow
           as="li"
-          label="tBTC"
+          label="iBTC"
           isAuthorized={tbtcApp.isAuthorized}
           percentage={tbtcApp.percentage}
           stakingProvider={stakingProvider}

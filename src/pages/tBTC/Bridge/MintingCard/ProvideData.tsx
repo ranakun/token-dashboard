@@ -43,8 +43,8 @@ const MintingProcessFormBase: FC<ComponentProps & FormikProps<FormValues>> = ({
       <FormikInput
         name="ethAddress"
         label="ETH Address"
-        placeholder="Address where you'll receive your tBTC"
-        tooltip="ETH address is prepopulated with your wallet address. This is the address where you'll receive your tBTC."
+        placeholder="Address where you'll receive your iBTC"
+        tooltip="ETH address is prepopulated with your wallet address. This is the address where you'll receive your iBTC."
         mb={6}
         isReadOnly={true}
       />

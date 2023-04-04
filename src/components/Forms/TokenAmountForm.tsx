@@ -38,7 +38,7 @@ export const TokenAmountFormBase: FC<
   maxTokenAmount,
   helperText,
   label = "Token Amount",
-  token = { decimals: 18, symbol: "T" },
+  token = { decimals: 18, symbol: "BAT" },
   icon = ThresholdCircleBrand,
   isDisabled = false,
   shouldValidateForm = true,

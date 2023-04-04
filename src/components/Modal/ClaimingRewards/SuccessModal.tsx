@@ -26,7 +26,7 @@ const ClaimRewardsSuccessModalBase: FC<ClaimRewardsSuccessProps> = ({
           <ListItem>
             <HStack justify="space-between">
               <BodySm>Claimed Amount</BodySm>
-              <BodySm>{formatTokenAmount(totalRewardsAmount)} T</BodySm>
+              <BodySm>{formatTokenAmount(totalRewardsAmount)} ETH</BodySm>
             </HStack>
           </ListItem>
           {beneficiaries.map((beneficiary) => (

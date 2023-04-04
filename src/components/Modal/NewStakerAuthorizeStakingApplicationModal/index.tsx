@@ -85,7 +85,7 @@ const NewStakerAuthorizeStakingApplicationModal: FC<BaseModalProps> = () => {
       <ModalBody>
         <InfoBox variant="modal" mb="6">
           <H5 mb={4}>
-            Please authorize Threshold apps to use your stake to earn rewards
+            Please authorize Insaanity apps to use your stake to earn rewards
           </H5>
           <BodyLg>
             You can authorize 100% of your stake to all the apps and change this
@@ -97,7 +97,7 @@ const NewStakerAuthorizeStakingApplicationModal: FC<BaseModalProps> = () => {
             <BodyMd>Total Staked Balance</BodyMd>
             <TokenBalance
               tokenAmount={stakeAmount}
-              tokenSymbol="T"
+              tokenSymbol="BAT"
               withSymbol
             />
           </HStack>

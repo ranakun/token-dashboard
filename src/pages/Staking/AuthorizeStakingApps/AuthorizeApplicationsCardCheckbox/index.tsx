@@ -351,7 +351,7 @@ export const AuthorizeApplicationsCardCheckboxBase: FC<
                 helperText={
                   status === "authorized" && isIncreaseAction
                     ? undefined
-                    : `Minimum ${formatTokenAmount(minAuthAmount)} T for ${
+                    : `Minimum ${formatTokenAmount(minAuthAmount)} BAT for ${
                         appAuthData.label
                       }`
                 }
@@ -418,7 +418,7 @@ const Deauthorization: FC<{
       >
         <H5>
           {formatTokenAmount(pendingAuthorizationDecrease)}{" "}
-          <BodyLg as="span">T</BodyLg>
+          <BodyLg as="span">BAT</BodyLg>
         </H5>
         <Box minWidth="220px">
           <>

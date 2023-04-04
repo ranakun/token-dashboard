@@ -84,7 +84,7 @@ const InitiateDeauthorization: FC<
             <BodySm color="gray.500">Decrease amount</BodySm>
             <TokenBalance
               tokenAmount={decreaseAmount.toString()}
-              tokenSymbol="T"
+              tokenSymbol="BAT"
               withSymbol
               as="p"
               fontSize="sm"

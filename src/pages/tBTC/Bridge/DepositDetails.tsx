@@ -222,7 +222,7 @@ export const DepositDetails: PageComponent = () => {
                   </BodyLg>{" "}
                   <InlineTokenBalance
                     tokenAmount={amount || "0"}
-                    tokenSymbol="tBTC"
+                    tokenSymbol="iBTC"
                     withSymbol
                     ml="auto"
                   />
@@ -289,10 +289,9 @@ export const DepositDetails: PageComponent = () => {
                 <Divider />
                 <Flex mt="8" alignItems="center">
                   <BodyLg>
-                    Eager to start a new mint while waiting for this one? You
-                    can now.
+                    You can start a new Mint while waiting for this one.
                   </BodyLg>
-                  <ButtonLink size="lg" to="/tBTC/mint" marginLeft="auto">
+                  <ButtonLink size="lg" to="/iBTC/mint" marginLeft="auto">
                     New Mint
                   </ButtonLink>
                 </Flex>
@@ -303,7 +302,7 @@ export const DepositDetails: PageComponent = () => {
       </Card>
       {mintingProgressStep === "completed" && (
         <ExternalPool
-          title={"tBTC Curve Pool"}
+          title={"iBTC Curve Pool"}
           externalPoolData={{ ...tBTCWBTCSBTCPoolData }}
           mt={4}
         />
@@ -548,31 +547,31 @@ const StepSwitcher: FC = () => {
             Success!
           </BodyLg>
           <BodyMd mt="2">
-            Add the tBTC <TBTCTokenContractLink /> to your Ethereum wallet.
+            Add the iBTC <TBTCTokenContractLink /> to your Ethereum wallet.
           </BodyMd>
           <Divider my="4" />
           <List spacing="2">
             <TransactionDetailsAmountItem
               label="Minted Amount"
               tokenAmount={amount}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
             />
             <TransactionDetailsAmountItem
               label="Minting Fee"
               tokenAmount={mintingFee}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
               precision={6}
               higherPrecision={8}
             />
             <TransactionDetailsAmountItem
-              label="Threshold Network Fee"
+              label="Insaanity Network Fee"
               tokenAmount={thresholdNetworkFee}
-              tokenSymbol="tBTC"
+              tokenSymbol="iBTC"
               precision={6}
               higherPrecision={8}
             />
           </List>
-          <ButtonLink size="lg" mt="8" mb="8" to="/tBTC" isFullWidth>
+          <ButtonLink size="lg" mt="8" mb="8" to="/iBTC" isFullWidth>
             New mint
           </ButtonLink>
         </>
@@ -628,7 +627,7 @@ const stepToResourceData: Record<
     link: ExternalHref.btcConfirmations,
   },
   "minting-initialized": {
-    title: "Minters, Guardians and a secure tBTC",
+    title: "Minters, Guardians and a secure iBTC",
     subtitle: "A phased approach with two main roles: Minters and Guardians.",
     link: ExternalHref.mintersAndGuardiansDocs,
   },

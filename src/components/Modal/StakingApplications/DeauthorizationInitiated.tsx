@@ -52,7 +52,7 @@ const DeauthorizationInitiatedBase: FC<DeauthorizationInitiatedProps> = ({
           <ListItem>
             <HStack justifyContent="space-between">
               <BodySm>Decrease Amount</BodySm>
-              <BodySm>{formatTokenAmount(decreaseAmount)} T</BodySm>
+              <BodySm>{formatTokenAmount(decreaseAmount)} BAT</BodySm>
             </HStack>
           </ListItem>
           <ListItem>

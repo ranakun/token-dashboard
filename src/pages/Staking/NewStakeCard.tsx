@@ -25,7 +25,7 @@ const NewStakeCard: FC<ComponentProps<typeof Card>> = () => {
     return `Minimum stake ${
       isLoading || minStakeAmount === undefined
         ? "loading..."
-        : `${formatTokenAmount(minStakeAmount)} T`
+        : `${formatTokenAmount(minStakeAmount)} BAT`
     }`
   }, [isLoading, hasError, minStakeAmount])
 

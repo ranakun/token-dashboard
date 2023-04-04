@@ -108,7 +108,7 @@ const OperatorAddressMappingCard: FC<{ stakingProvider: string }> = ({
             <AlertIcon h={"14px"} as={"div"} alignSelf="auto" />
             <BodyXs>
               {isOneOfTheAppsNotMapped
-                ? "One application from the tBTC + Random Beacon Rewards Bundle Suite requires the Operator Address mapped."
+                ? "One application from the iBTC + Random Beacon Rewards Bundle Suite requires the Operator Address mapped."
                 : "This section is for Staking Providers and self-operating stakers only. Map your Operator Address to your Provider Address for a better support for your hardware wallet in the node setup."}
             </BodyXs>
           </Alert>

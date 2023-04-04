@@ -10,7 +10,7 @@ import {
 type DotsLoadingIndicatorProps = StackProps & Omit<ThemingProps, "orientation">
 
 export const DotsLoadingIndicator: FC<DotsLoadingIndicatorProps> = ({
-  colorScheme = "brand",
+  colorScheme = "yellow",
   size = "sm",
   ...restProps
 }) => {

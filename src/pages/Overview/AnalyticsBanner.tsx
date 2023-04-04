@@ -13,8 +13,8 @@ const AnalyticsBanner: FC = () => {
 
   return (
     <SecondaryAnnouncementBanner
-      title="Want to help improve the Threshold product experience?"
-      subTitle="Opt in now to Threshold’s anonymous analytics."
+      title="Want to help improve the Insaanity product experience?"
+      subTitle="Opt in now to Insaanity’s anonymous analytics."
       imgSrc={imgSrc}
       buttonText="View Details"
       onClick={() => openModal(ModalType.Analytics)}

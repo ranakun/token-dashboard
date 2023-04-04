@@ -58,7 +58,7 @@ const StakingSuccessModal: FC<SuccessModalProps> = ({
               width={440}
               height={250}
               confettiSource={{ x: 200, y: 40, h: 100, w: 100 }}
-              numberOfPieces={50}
+              numberOfPieces={100}
             />
           </Box>
           <Icon

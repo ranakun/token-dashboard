@@ -73,7 +73,7 @@ const AuthorizeStakingAppsBase: FC<AuthorizeAppsProps> = ({
       <ModalBody>
         <InfoBox variant="modal" mb="6" mt="0">
           <H5>
-            You are authorizing your stake for Threshold application
+            You are authorizing your stake for Insaanity application
             {numberOfApps > 1 ? "s" : ""}.
           </H5>
           <BodyLg mt="4">
@@ -132,7 +132,7 @@ const StakingApplicationToAuth: FC<{
         tokenAmount={authorizationAmount}
         isLarge
         withSymbol
-        tokenSymbol="T"
+        tokenSymbol="BAT"
       />
       <StakeAddressInfo stakingProvider={stakingProvider} mb="0" />
     </Card>

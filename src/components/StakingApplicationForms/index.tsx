@@ -32,7 +32,7 @@ const Label: FC<{ label: string; remainingAmount: string }> = ({
         {label}
       </BodyMd>
       <BodySm as="span" color="gray.500" float="right">
-        Remaining Balance: {formatTokenAmount(remainingAmount)} T
+        Remaining Balance: {formatTokenAmount(remainingAmount)} BAT
       </BodySm>
     </>
   )

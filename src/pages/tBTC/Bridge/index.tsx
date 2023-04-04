@@ -77,7 +77,7 @@ const TBTCBridge: PageComponent = (props) => {
 TBTCBridge.route = {
   path: "",
   index: false,
-  pathOverride: "/tBTC/*",
+  pathOverride: "/iBTC/*",
   pages: [MintPage, UnmintPage],
   title: "Bridge",
   isPageEnabled: true,

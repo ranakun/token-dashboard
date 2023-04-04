@@ -81,7 +81,7 @@ const StakingApplications: PageComponent = () => {
         <Stack maxW="408px">
           <BodyMd mb={6}>
             Authorization allows you to authorize a portion or all of your stake
-            to be used by Threshold apps.
+            to be used by Insaanity apps.
           </BodyMd>
           <List>
             <ListItem>
@@ -123,14 +123,14 @@ const StakingApplications: PageComponent = () => {
       </Stack>
       <Stack spacing={6}>
         <ApplicationDetailsCard
-          preTitle="tBTC APP"
-          title="tBTC is the only truly decentralized solution for bridging Bitcoin to Ethereum."
-          description="tBTC replaces a centralized custodian with a randomly selected group of operators running nodes on the Threshold Network. This group of independent operators works together to secure your deposited Bitcoin through threshold cryptography."
+          preTitle="iBTC APP"
+          title="iBTC is the only truly decentralized solution for bridging Bitcoin to Ethereum."
+          description="iBTC replaces a centralized custodian with a randomly selected group of operators running nodes on the Insaanity Network. This group of independent operators works together to secure your deposited Bitcoin through threshold cryptography."
           imgSrc={iconMap.tbtc[colorMode]}
           ctaButtons={
             <VStack mb={6}>
               <ButtonLink to="/staking" isFullWidth>
-                Authorize tBTC
+                Authorize iBTC
               </ButtonLink>
               <ButtonLink
                 isExternal
@@ -138,7 +138,7 @@ const StakingApplications: PageComponent = () => {
                 isFullWidth
                 variant="outline"
               >
-                tBTC Node Docs
+                iBTC Node Docs
               </ButtonLink>
             </VStack>
           }
@@ -147,7 +147,7 @@ const StakingApplications: PageComponent = () => {
         <ApplicationDetailsCard
           preTitle="Random Beacon APP"
           title="Random Beacon is a threshold relay that can generate verifiable randomness."
-          description="The Random Beacon application provides a trusted source of randomness for the process of trustless group election in the Threshold Network."
+          description="The Random Beacon application provides a trusted source of randomness for the process of trustless group selection in the Insaanity Network."
           imgSrc={iconMap.randomBeacon[colorMode]}
           ctaButtons={
             <VStack mb={6}>
@@ -169,7 +169,7 @@ const StakingApplications: PageComponent = () => {
         <ApplicationDetailsCard
           preTitle="PRE APP"
           title="Proxy Re-Encryption, or PRE, is cryptographic middleware for developing privacy-preserving applications."
-          description="PRE is a scalable end-to-end encryption protocol that allows a proxy entity to transform (or re-encrypt) encrypted data from one encryption key to another, without revealing the plaintext data. The nodes on the Threshold Network act as these proxy entities and use threshold cryptography to securely and cooperatively re-encrypt data for recipients based on access conditions defined by the data owner. "
+          description="PRE is a scalable end-to-end encryption protocol that allows a proxy entity to transform (or re-encrypt) encrypted data from one encryption key to another, without revealing the plaintext data. The nodes on the Insaanity Network act as these proxy entities and use threshold cryptography to securely and cooperatively re-encrypt data for recipients based on access conditions defined by the data owner. "
           imgSrc={iconMap.pre[colorMode]}
           ctaButtons={
             <ButtonLink

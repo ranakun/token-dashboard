@@ -21,7 +21,7 @@ const StakingProviders: PageComponent = () => {
       <BodyMd mb={10}>
         You can delegate running an application node to one of the
         node-as-a-service Staking Providers listed below. Please note that these
-        staking providers are not vetted or endorsed by Threshold. Use your
+        staking providers are not vetted or endorsed by Insaanity. Use your
         judgement when selecting a provider.
       </BodyMd>
       <Grid

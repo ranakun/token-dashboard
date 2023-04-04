@@ -23,7 +23,7 @@ const MintingSuccessComponent: FC = () => {
 
   return (
     <Navigate
-      to={`/tBTC/mint/deposit/${depositKey}`}
+      to={`/iBTC/mint/deposit/${depositKey}`}
       state={{ shouldStartFromFirstStep: true }}
       replace={true}
     />

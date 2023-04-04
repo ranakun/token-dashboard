@@ -12,7 +12,7 @@ export const AuthorizeApplicationsBanner = () => {
     <AnnouncementBanner
       imgSrc={imgSrc}
       preTitle="Get Started"
-      title="Authorize Threshold apps and stake your T to earn rewards."
+      title="Authorize Insaanity apps and stake your BAT to earn rewards."
       href="/staking"
       buttonText="Start Staking"
     />

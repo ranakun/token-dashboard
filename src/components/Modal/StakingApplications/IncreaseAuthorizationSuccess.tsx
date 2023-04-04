@@ -42,7 +42,7 @@ const IncreaseAuthorizationSuccessBase: FC<
           <ListItem>
             <HStack justifyContent="space-between">
               <BodySm>Increase Amount</BodySm>
-              <BodySm>{formatTokenAmount(increaseAmount)} T</BodySm>
+              <BodySm>{formatTokenAmount(increaseAmount)} BAT</BodySm>
             </HStack>
           </ListItem>
           <ListItem>

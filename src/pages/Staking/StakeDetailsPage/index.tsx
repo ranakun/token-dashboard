@@ -100,7 +100,7 @@ const StakeDetailsPage: FC = () => {
               <TokenBalance
                 tokenAmount={stake.totalInTStake.toString()}
                 withSymbol
-                tokenSymbol="T"
+                tokenSymbol="BAT"
                 isLarge
               />
             </InfoBox>
@@ -111,7 +111,7 @@ const StakeDetailsPage: FC = () => {
               <TokenBalance
                 tokenAmount={rewardsForStake}
                 withSymbol
-                tokenSymbol="T"
+                tokenSymbol="ETH"
                 isLarge
               />
             </InfoBox>
@@ -137,7 +137,7 @@ const StakeDetailsPage: FC = () => {
           {/* <StakeDetailRow label="PRE Node Status">
             <NodeStatusLabel isAuthorized />
           </StakeDetailRow> */}
-          <StakeDetailRow label="tBTC Node Status">
+          <StakeDetailRow label="iBTC Node Status">
             <NodeStatusLabel isAuthorized={tbtcApp.isAuthorized} />
           </StakeDetailRow>
           <StakeDetailRow label="Random Beacon Node Status">

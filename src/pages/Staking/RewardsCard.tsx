@@ -62,18 +62,18 @@ const RewardsCard: FC<{
               borderColor={hasBonusRewards ? "gray.300" : undefined}
             >
               {formatTokenAmount(totalRewardsBalance)}
-              <BodyLg as="span"> T</BodyLg>
+              <BodyLg as="span"> ETH</BodyLg>
             </H5>
             {hasBonusRewards && (
               <BodyLg flex="1" p="4" textAlign="right">
-                {formatTokenAmount(totalBonusBalance)} T
+                {formatTokenAmount(totalBonusBalance)} ETH
               </BodyLg>
             )}
           </>
         ) : (
           <BodyMd>
             Monthly staking rewards are distributed retroactively by the
-            Threshold Council and are claimable on or about the beginning of the
+            Insaanity Council and are claimable on or about the beginning of the
             subsequent month.
           </BodyMd>
         )}

@@ -29,13 +29,12 @@ export const StakingActionsCard: FC<ComponentProps<typeof Card>> = (props) => {
 const stakingActions = [
   {
     sectionName: "Rewards",
-    items: ["T rewards are released monthly."],
+    items: ["ETH rewards are released monthly."],
   },
   {
     sectionName: "Stake Top-ups",
     items: [
-      "You can top up your stake with more T tokens via the staking page.",
-      "If you want to top up your Legacy stake with Legacy tokens you have to go to the Legacy dashboard in order to do that.",
+      "You can top up your stake with more BAT tokens via the staking page.",
     ],
   },
 

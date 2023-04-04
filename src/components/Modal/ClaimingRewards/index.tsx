@@ -80,7 +80,7 @@ const ClaimingRewardsBase: FC<
                   </HStack>
                   <HStack justify="space-between">
                     <BodySm>Reward Amount</BodySm>
-                    <BodySm>{formatTokenAmount(rewardAmount)} T</BodySm>
+                    <BodySm>{formatTokenAmount(rewardAmount)} ETH</BodySm>
                   </HStack>
                 </ListItem>
               )

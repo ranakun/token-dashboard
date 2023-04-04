@@ -55,19 +55,19 @@ const MintingTransactionDetails = () => {
       <TransactionDetailsAmountItem
         label="Amount To Be Minted"
         tokenAmount={tBTCMintAmount}
-        tokenSymbol="tBTC"
+        tokenSymbol="iBTC"
       />
       <TransactionDetailsAmountItem
         label="Minting Fee"
         tokenAmount={mintingFee}
-        tokenSymbol="tBTC"
+        tokenSymbol="iBTC"
         precision={6}
         higherPrecision={8}
       />
       <TransactionDetailsAmountItem
         label="Threshold Network Fee"
         tokenAmount={thresholdNetworkFee}
-        tokenSymbol="tBTC"
+        tokenSymbol="iBTC"
         precision={6}
         higherPrecision={8}
       />

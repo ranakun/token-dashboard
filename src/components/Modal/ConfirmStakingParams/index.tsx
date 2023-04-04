@@ -95,7 +95,7 @@ const ConfirmStakingParamsModal: FC<
       <ModalBody>
         <InfoBox variant="modal">
           <H5 mb="4">
-            You are about to make a deposit into the T Staking Contract.
+            You are about to make a deposit into the Insaanity Staking Contract.
           </H5>
           {featureFlags.MULTI_APP_STAKING && (
             <BodyLg>Staking requires 2 transactions.</BodyLg>
@@ -105,7 +105,7 @@ const ConfirmStakingParamsModal: FC<
           <ListItem>
             <HStack justifyContent="space-between">
               <BodySm>Staked Amount</BodySm>
-              <BodySm>{`${formatTokenAmount(stakeAmount)} T`}</BodySm>
+              <BodySm>{`${formatTokenAmount(stakeAmount)} BAT`}</BodySm>
             </HStack>
           </ListItem>
         </List>

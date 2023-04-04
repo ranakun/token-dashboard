@@ -82,7 +82,9 @@ const StakingApplicationsAuthorizedBase: FC<
                 <BodySm>{`${getStakingAppNameFromAddress(
                   _.address
                 )} Authorization Amount`}</BodySm>
-                <BodySm>{`${formatTokenAmount(_.amount)} T (${formatPercentage(
+                <BodySm>{`${formatTokenAmount(
+                  _.amount
+                )} BAT (${formatPercentage(
                   calculatePercenteage(_.amount, stake?.totalInTStake)
                 )})`}</BodySm>
               </HStack>

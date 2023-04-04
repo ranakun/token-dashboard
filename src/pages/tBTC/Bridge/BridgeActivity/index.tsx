@@ -94,7 +94,7 @@ const ActivityItem: FC<BridgeActivityType> = ({
         textDecoration="none"
         _hover={{ textDecoration: "none" }}
         color="inherit"
-        to={`/tBTC/mint/deposit/${depositKey}`}
+        to={`/iBTC/mint/deposit/${depositKey}`}
       >
         <InlineTokenBalance tokenAmount={amount} />
       </LinkOverlay>

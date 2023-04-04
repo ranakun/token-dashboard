@@ -46,10 +46,10 @@ const Sidebar = () => {
 
     if (featureFlags.TBTC_V2) {
       navItems.push({
-        text: "tBTC",
+        text: "iBTC",
         activeIcon: tBTCFill,
         passiveIcon: tBTCOutline,
-        href: "/tBTC",
+        href: "/iBTC",
       } as NavItemDetail)
     }
 

@@ -36,7 +36,7 @@ const StakingChecklistModal: FC<BaseModalProps & { stakeAmount: string }> = ({
         <Stack spacing={6}>
           <InfoBox variant="modal">
             <BodyLg color={useColorModeValue("gray.700", "white")} as="span">
-              <H5 mb={4}>Staking in Threshold requires running a node</H5>
+              <H5 mb={4}>Staking in Insaanity requires running a node</H5>
               <BodyLg>
                 Please review the staking timeline below for a handy overview of
                 the staking requirements.

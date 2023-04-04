@@ -8,7 +8,7 @@ import {
 export const ProvidersCardNonMAS: FC<ComponentProps<typeof Card>> = (props) => {
   return (
     <Card {...props}>
-      <LabelSm>threshold and pre staking providers</LabelSm>
+      <LabelSm>insaanity and pre staking providers</LabelSm>
       <AllAppsProvidersList />
       <BoxLabel my="5" w="fit-content">
         PRE Only

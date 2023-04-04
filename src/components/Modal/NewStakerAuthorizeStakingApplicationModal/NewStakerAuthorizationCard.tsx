@@ -119,7 +119,7 @@ export const NewStakerAuthorizationCard: FC<
               <HStack justifyContent="space-between">
                 <BodyMd fontWeight="bold">Amount</BodyMd>
                 <BodySm color="gray.500">
-                  Remaining Balance: {remainingAmount} T
+                  Remaining Balance: {remainingAmount} BAT
                 </BodySm>
               </HStack>
             }
@@ -131,7 +131,7 @@ export const NewStakerAuthorizationCard: FC<
                 <Link color="brand.500" mr={2} onClick={() => setValue(min)}>
                   Minimum
                 </Link>
-                {formatTokenAmount(min)} T for {label}
+                {formatTokenAmount(min)} BAT for {label}
               </BodySm>
             }
             _disabled={{ bg: "gray.50", border: "none" }}

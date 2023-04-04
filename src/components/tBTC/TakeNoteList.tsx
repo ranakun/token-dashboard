@@ -36,7 +36,7 @@ export const TakeNoteList: FC<{ size?: "sm" | "md" }> = ({ size = "md" }) => {
         <List spacing="2">
           <ListItemWithIcon>
             <BodyComponent as="span">
-              Your tBTC token will arrive in{" "}
+              Your iBTC token will arrive in{" "}
               <Box as="span" color="brand.500">
                 ~ 1 to 3 hours
               </Box>{" "}

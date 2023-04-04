@@ -20,9 +20,9 @@ const StakeNameCell: FC<StakeCellProps & { index: number }> = ({
       <HStack>
         <Circle size="24px" bg={gradient(stake.stakingProvider)} />
         <VStack>
-          <BodyMd>T Stake {index + 1}</BodyMd>
+          <BodyMd>BAT Stake {index + 1}</BodyMd>
           <BodySm color={useColorModeValue("gray.500", "gray.300")}>
-            Threshold
+            Insaanity
           </BodySm>
           {stake.tStake == "0" && (
             <Badge variant="subtle" colorScheme="yellow">
