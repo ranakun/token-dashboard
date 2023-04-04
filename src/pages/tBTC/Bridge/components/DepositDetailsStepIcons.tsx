@@ -22,8 +22,8 @@ export const BTCConfirmationsIcon = () => {
           y2="89.7981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#BD30FF" />
-          <stop offset="1" stopColor="#7D00FF" />
+          <stop stopColor="#D48806" />
+          <stop offset="1" stopColor="#FAAD14" />
         </linearGradient>
       </defs>
     </svg>
@@ -54,7 +54,9 @@ export const MintingInitializedIcon = () => {
           y2="89.8022"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#F55B5B" />
+          {/* <stop stopColor="#F55B5B" />
+          <stop offset="1" stopColor="#FAAD14" /> */}
+          <stop stopColor="#D48806" />
           <stop offset="1" stopColor="#FAAD14" />
         </linearGradient>
       </defs>
@@ -86,8 +88,10 @@ export const GuardianCheckIcon = () => {
           y2="89.8022"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8FFF00" />
-          <stop offset="1" stopColor="#48BB78" />
+          {/* <stop stopColor="#8FFF00" />
+          <stop offset="1" stopColor="#48BB78" /> */}
+          <stop stopColor="#D48806" />
+          <stop offset="1" stopColor="#FAAD14" />
         </linearGradient>
       </defs>
     </svg>
