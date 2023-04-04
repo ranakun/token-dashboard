@@ -135,7 +135,7 @@ export const CopyAddressToClipboard: FC<CopyAddressToClipboardProps> = ({
   withLinkToBlockExplorer = false,
   ...restProps
 }) => {
-  const addressColor = useColorModeValue("brand.500", "brand.100")
+  const addressColor = useColorModeValue("yellow.500", "yellow.100")
   const _address = withFullAddress ? address : shortenAddress(address)
   const mr = copyButtonPosition === "end" ? "2.5" : undefined
   const ml =

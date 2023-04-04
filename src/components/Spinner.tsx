@@ -10,7 +10,7 @@ const Spinner = () => {
         thickness="8px"
         speed="1.3s"
         emptyColor="gray.200"
-        color="brand.500"
+        color="yellow.500"
         height="120px"
         width="120px"
       />

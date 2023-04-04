@@ -32,9 +32,9 @@ const baseStyleItem: SystemStyleObject = {
         },
       },
       ".breakpoint__connector": {
-        backgroundColor: "brand.500",
+        backgroundColor: "yellow.500",
         _after: {
-          backgroundColor: "brand.500",
+          backgroundColor: "yellow.500",
         },
       },
     },
@@ -48,7 +48,7 @@ const baseStyleItem: SystemStyleObject = {
       },
       ".timeline__item__breakpoint": {
         ".breakpoint__connector": {
-          backgroundColor: "brand.500",
+          backgroundColor: "yellow.500",
         },
         ".breakpoint__dot": {
           background: "gradient.3",
@@ -184,7 +184,7 @@ const variants = {
 
 const defaultProps = {
   variant: "horizontal",
-  colorScheme: "brand",
+  colorScheme: "yellow",
 }
 
 export const Timeline = {

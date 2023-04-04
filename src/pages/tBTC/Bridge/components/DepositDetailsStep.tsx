@@ -119,13 +119,13 @@ const BitcoinConfirmationsSummary: FC<{
     txConfirmations &&
     minConfirmationsNeeded &&
     txConfirmations >= minConfirmationsNeeded
-      ? "brand.500"
+      ? "yellow.500"
       : "gray.500"
 
   return (
     <HStack mt={8}>
       <CheckCircleIcon w={4} h={4} color={checkmarkColor} />{" "}
-      <BodySm color={"gray.500"}>
+      <BodySm color={"brand.500"}>
         <Skeleton
           as="span"
           isLoaded={areConfirmationsLoaded}
@@ -164,7 +164,7 @@ export const Step1: FC<
       chain="bitcoin"
       txHash={txHash}
       icon={<BTCConfirmationsIcon />}
-      progressBarColor="brand.500"
+      progressBarColor="yellow.500"
       progressBarValue={confirmations}
       progressBarMaxValue={requiredConfirmations}
       progressBarLabel={
@@ -240,11 +240,11 @@ export const Step4: FC<CommonStepProps> = ({ txHash, onComplete }) => {
   return (
     <StepTemplate
       title="Minting in progress"
-      subtitle="The contract is minting your tBTC tokens."
+      subtitle="The contract is minting your iBTC tokens."
       icon={<MintingCompletedIcon />}
       chain="ethereum"
       txHash={txHash}
-      progressBarColor="teal.500"
+      progressBarColor="yellow.500"
       isCompleted={true}
       onComplete={onComplete}
       isIndeterminate

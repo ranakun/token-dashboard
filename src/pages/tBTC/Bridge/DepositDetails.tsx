@@ -217,7 +217,7 @@ export const DepositDetails: PageComponent = () => {
                 <TbtcMintingCardTitle />
                 <Flex mb="4" alignItems="center" textStyle="bodyLg">
                   <BodyLg>
-                    <Box as="span" fontWeight="600" color="brand.500">
+                    <Box as="span" fontWeight="600" color="yellow.500">
                       {mintingProgressStep === "completed"
                         ? "Minted"
                         : "Minting"}
@@ -431,22 +431,9 @@ const DepositDetailsTimeline: FC<DepositDetailsTimelineProps> = ({
             <TimelineDot position="relative">
               {item.status === "active" && (
                 <Icon
-                  as={IoMdCheckmark}
+                  as={IoCheckmarkSharp}
                   position="absolute"
-                  color="teal"
-                  w="22px"
-                  h="22px"
-                  m="auto"
-                  left="0"
-                  right="0"
-                  textAlign="center"
-                />
-              )}
-              {item.status === "semi-active" && (
-                <Icon
-                  as={IoMdCheckmark}
-                  position="absolute"
-                  color="teal"
+                  color="white"
                   w="22px"
                   h="22px"
                   m="auto"
