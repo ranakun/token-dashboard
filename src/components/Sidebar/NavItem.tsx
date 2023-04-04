@@ -97,14 +97,14 @@ const NavItem: FC<NavItemDetail> = ({
               w="calc(100% - 32px)"
               justifyContent="left"
               variant="side-bar"
-              leftIcon={
-                <Icon
-                  boxSize="32px"
-                  as={isActive ? activeIcon : passiveIcon}
-                  color={isActive ? activeIconColor : iconColor}
-                  sx={iconStyle}
-                />
-              }
+              // leftIcon={
+              //   <Icon
+              //     boxSize="32px"
+              //     as={isActive ? activeIcon : passiveIcon}
+              //     color={isActive ? activeIconColor : iconColor}
+              //     sx={iconStyle}
+              //   />
+              // }
               color={isActive ? tooltipBtnColor : undefined}
               fontSize="lg"
             >

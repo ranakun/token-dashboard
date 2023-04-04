@@ -46,7 +46,7 @@ const AuthorizeApplicationRow: FC<AuthorizeApplicationRowProps> = ({
             value={percentage}
             size="lg"
             width="90%"
-            colorScheme="brand"
+            colorScheme="gray"
             borderRadius={50}
           />
           <BodySm>{formatPercentage(percentage, undefined, true)}</BodySm>

@@ -30,7 +30,11 @@ const AccountButton: FC<{
     )
   }
 
-  return <Button onClick={openWalletModal}>Connect Wallet</Button>
+  return (
+    <Button onClick={openWalletModal} colorScheme="gray">
+      Connect Wallet
+    </Button>
+  )
 }
 
 export default AccountButton

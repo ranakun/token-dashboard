@@ -10,10 +10,12 @@ import {
   useColorModeValue,
   Tooltip,
   BoxProps,
+  Image,
 } from "@threshold-network/components"
 import { useWeb3React } from "@web3-react/core"
 import Icon from "./Icon"
 import { formatTokenAmount } from "../utils/formatAmount"
+import batCoin from "../static/images/batCoin.png"
 
 export interface TokenBalanceProps {
   tokenAmount: string | number
@@ -100,7 +102,7 @@ const TokenBalance: FC<TokenBalanceProps & TextProps> = ({
   return (
     <Box>
       <HStack alignItems="center">
-        {icon && <Icon as={icon} boxSize={iconSize} />}{" "}
+        {/* {icon && <Icon as={icon} boxSize={iconSize} />}{" "} */}
         <BalanceTag {...restProps}>
           {shouldRenderTokenAmount ? (
             withHigherPrecision ? (

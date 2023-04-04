@@ -30,12 +30,12 @@ const Sidebar = () => {
         passiveIcon: IoHomeOutlineSharp,
         href: "/overview",
       },
-      {
-        text: "Upgrade",
-        activeIcon: IoSwapHorizontalSharp,
-        passiveIcon: IoSwapHorizontalSharp,
-        href: upgradeHref,
-      },
+      // {
+      //   text: "Upgrade",
+      //   activeIcon: IoSwapHorizontalSharp,
+      //   passiveIcon: IoSwapHorizontalSharp,
+      //   href: upgradeHref,
+      // },
       {
         text: "Staking",
         activeIcon: IoLockClosedSharp,
@@ -53,14 +53,14 @@ const Sidebar = () => {
       } as NavItemDetail)
     }
 
-    if (featureFlags.FEEDBACK_MODULE) {
-      navItems.push({
-        text: "Feedback",
-        activeIcon: IoChatbubbleEllipsesSharp,
-        passiveIcon: IoChatbubbleEllipsesOutline,
-        href: "/feedback/usability-survey",
-      })
-    }
+    // if (featureFlags.FEEDBACK_MODULE) {
+    //   navItems.push({
+    //     text: "Feedback",
+    //     activeIcon: IoChatbubbleEllipsesSharp,
+    //     passiveIcon: IoChatbubbleEllipsesOutline,
+    //     href: "/feedback/usability-survey",
+    //   })
+    // }
 
     return navItems
   }, [pathname, upgradeHref])

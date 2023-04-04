@@ -62,8 +62,10 @@ export const AnnouncementBannerTitle: FC<AnnouncementBannerTitleProps> = ({
 
   return (
     <>
-      {preTitle && <LabelMd sx={styles.preTitle}>{preTitle}</LabelMd>}
-      <H4 sx={styles.title}>{title}</H4>
+      {preTitle && <LabelMd textColor="white">{preTitle}</LabelMd>}
+      <H4 sx={styles.title} textColor="white">
+        {title}
+      </H4>
     </>
   )
 }
@@ -87,7 +89,12 @@ const AnnouncementBannerBody: FC<AnnouncementBannerBodyProps> = ({
       <Stack>
         <AnnouncementBannerTitle title={title} preTitle={preTitle} />
       </Stack>
-      <ButtonLink to={href} sx={styles.ctaButton}>
+      <ButtonLink
+        to={href}
+        sx={styles.ctaButton}
+        colorScheme="gray"
+        color="black"
+      >
         {buttonText}
       </ButtonLink>
     </Stack>

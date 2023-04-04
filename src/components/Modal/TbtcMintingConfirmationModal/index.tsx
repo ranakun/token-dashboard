@@ -117,7 +117,12 @@ const TbtcMintingConfirmationModal: FC<TbtcMintingConfirmationModalProps> = ({
         </BodySm>
       </ModalBody>
       <ModalFooter>
-        <Button onClick={closeModal} variant="outline" mr={2}>
+        <Button
+          onClick={closeModal}
+          variant="outline"
+          mr={2}
+          colorScheme="gray"
+        >
           Cancel
         </Button>
         <Button

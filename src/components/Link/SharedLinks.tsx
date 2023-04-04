@@ -20,6 +20,7 @@ export const StakingContractLearnMore: FC<StakingContractLearnMoreProps> = (
         <ViewInBlockExplorer
           id={tStakingContract.address}
           type={ExplorerDataType.ADDRESS}
+          color="gray"
           text="staking contract."
         />
       </BodySm>

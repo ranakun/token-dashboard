@@ -120,7 +120,12 @@ export const BridgeActivity: FC<{
   return (
     <>
       <HStack justifyContent="space-between" mt="10">
-        <LabelSm color="gray.500">tBTC</LabelSm>
+        <LabelSm color="gray.500">
+          <Box as="span" textTransform="lowercase">
+            i
+          </Box>
+          BTC
+        </LabelSm>
         <LabelSm color="gray.500">state</LabelSm>
       </HStack>
       <List spacing="1" mt="2">

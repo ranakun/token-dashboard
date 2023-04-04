@@ -57,14 +57,14 @@ const StakingOverview: PageComponent = () => {
       gridTemplate={gridTemplate}
       gridGap="4"
     >
-      <ThresholdStakesCard
+      {/* <ThresholdStakesCard
         gridArea="t-stakes"
         tStakingContractAddress={tStakingContract?.address!}
       />
       <LegacyStakesCard
         gridArea="legacy-stakes"
         tStakingContractAddress={tStakingContract?.address!}
-      />
+      /> */}
       <NewTStakesCard gridArea="new-t-stakes" />
       {featureFlags.MULTI_APP_STAKING && (
         <AuthorizingApplicationsCard gridArea="authorizing-apps" />

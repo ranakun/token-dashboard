@@ -19,6 +19,7 @@ export const BridgeContractLink: FC<Props> = ({
   return (
     <ViewInBlockExplorer
       id={address}
+      textColor="gray"
       type={ExplorerDataType.ADDRESS}
       text={text}
       {...props}

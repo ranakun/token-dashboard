@@ -7,7 +7,7 @@ const AlphaReleaseTag: FC = () => {
   return (
     <Box display="flex" justifyContent="center" mt={6}>
       <Badge
-        colorScheme="purple"
+        colorScheme="yellow"
         variant="subtle"
         borderRadius="sm"
         fontSize={isOpen ? 16 : 10}

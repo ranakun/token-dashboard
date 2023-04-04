@@ -1,4 +1,4 @@
-import { H1, Container, Image } from "@threshold-network/components"
+import { H1, Container, Image, LabelLg } from "@threshold-network/components"
 import { Outlet } from "react-router-dom"
 import thresholdWordMark from "../../static/images/thresholdWordMark.svg"
 import useDocumentTitle from "../../hooks/useDocumentTitle"
@@ -7,9 +7,10 @@ import { PageComponent } from "../../types"
 import { featureFlags } from "../../constants"
 import AnnouncementBanner from "../../components/AnnouncementBanner"
 import tbtcAppBannerIllustration from "../../static/images/tBTCAppBanner.svg"
+import ranadid2 from "../../static/images/ranadid2.png"
 
 const Overview: PageComponent = () => {
-  useDocumentTitle("Threshold - Overview")
+  useDocumentTitle("Insaanity - Overview")
 
   return (
     <Container maxW={{ base: "2xl", xl: "6xl" }} my={16}>
@@ -18,9 +19,9 @@ const Overview: PageComponent = () => {
       {featureFlags.TBTC_V2 && (
         <AnnouncementBanner
           variant="primary"
-          imgSrc={tbtcAppBannerIllustration}
+          imgSrc={ranadid2}
           preTitle="get started"
-          title="The NEW tBTC dApp is here!"
+          title="Jump to the iBTC dApp!"
           href="/tBTC"
           buttonText="Start Minting"
         />

@@ -1,4 +1,4 @@
-import { FC, Ref, useRef, useState } from "react"
+import { FC, Ref, useRef, useState, useEffect } from "react"
 import { FormikErrors, FormikProps, withFormik } from "formik"
 import { Button, BodyMd } from "@threshold-network/components"
 import { useTbtcState } from "../../../../hooks/useTbtcState"
@@ -157,6 +157,10 @@ export const ProvideDataComponent: FC<{
     updateState("mintingStep", MintingStep.Deposit)
   }
 
+  useEffect(() => {
+    console.log(formRef?.current?.values)
+  }, [formRef.current?.values])
+
   return (
     <>
       <TbtcMintingCardTitle onPreviousStepClick={onPreviousStepClick} />
@@ -179,6 +183,7 @@ export const ProvideDataComponent: FC<{
         type="submit"
         form="tbtc-minting-data-form"
         isFullWidth
+        style={{ background: "grey" }}
       >
         Generate Deposit Address
       </Button>
