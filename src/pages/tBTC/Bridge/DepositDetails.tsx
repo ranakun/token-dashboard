@@ -31,7 +31,11 @@ import {
   BodySm,
   BodyXs,
 } from "@threshold-network/components"
-import { IoCheckmarkSharp, IoTime as TimeIcon } from "react-icons/all"
+import {
+  IoCheckmarkSharp,
+  IoMdCheckmark,
+  IoTime as TimeIcon,
+} from "react-icons/all"
 import { InlineTokenBalance } from "../../../components/TokenBalance"
 import {
   Timeline,
@@ -427,9 +431,22 @@ const DepositDetailsTimeline: FC<DepositDetailsTimelineProps> = ({
             <TimelineDot position="relative">
               {item.status === "active" && (
                 <Icon
-                  as={IoCheckmarkSharp}
+                  as={IoMdCheckmark}
                   position="absolute"
-                  color="white"
+                  color="teal"
+                  w="22px"
+                  h="22px"
+                  m="auto"
+                  left="0"
+                  right="0"
+                  textAlign="center"
+                />
+              )}
+              {item.status === "semi-active" && (
+                <Icon
+                  as={IoMdCheckmark}
+                  position="absolute"
+                  color="teal"
                   w="22px"
                   h="22px"
                   m="auto"
