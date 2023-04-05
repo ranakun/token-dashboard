@@ -11,7 +11,7 @@ import {
   Image,
 } from "@threshold-network/components"
 import withBaseModal from "../withBaseModal"
-import tbtcIllustration from "../../../static/images/tbtcMintingStep1.svg"
+import tbtcIllustration from "../../../static/images/ranadid5.png"
 import { BaseModalProps } from "../../../types"
 import InfoBox from "../../InfoBox"
 import ModalCloseButton from "../ModalCloseButton"

@@ -1,6 +1,6 @@
 import { FC, ComponentProps } from "react"
 import { LabelSm, Card, BodySm, Image } from "@threshold-network/components"
-import btcJsonFile from "../../../static/images/tbtc-json-file.png"
+import btcJsonFile from "../../../static/images/ranadid10.png"
 import Link from "../../../components/Link"
 import { ExternalHref } from "../../../enums"
 

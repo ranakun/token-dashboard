@@ -122,14 +122,16 @@ export const MintingCompletedIcon = () => {
           y2="117.996"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#31DCED" />
+          {/* <stop stopColor="#31DCED" />
           <stop offset="0.09" stopColor="#4FC4EC" />
           <stop offset="0.25" stopColor="#809EEB" />
           <stop offset="0.41" stopColor="#A87EEB" />
           <stop offset="0.57" stopColor="#C765EA" />
           <stop offset="0.73" stopColor="#DE53E9" />
           <stop offset="0.87" stopColor="#EB49E9" />
-          <stop offset="1" stopColor="#F045E9" />
+          <stop offset="1" stopColor="#F045E9" /> */}
+          <stop stopColor="#D48806" />
+          <stop offset="1" stopColor="#FAAD14" />
         </linearGradient>
       </defs>
     </svg>

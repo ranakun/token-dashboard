@@ -12,7 +12,7 @@ import {
 } from "@threshold-network/components"
 import InfoBox from "../../InfoBox"
 import { BaseModalProps } from "../../../types"
-import btcJsonFile from "../../../static/images/tbtc-json-file.png"
+import btcJsonFile from "../../../static/images/ranadid10.png"
 import withBaseModal from "../withBaseModal"
 import { DepositScriptParameters } from "@keep-network/tbtc-v2.ts/dist/src/deposit"
 import { downloadFile } from "../../../web3/utils"

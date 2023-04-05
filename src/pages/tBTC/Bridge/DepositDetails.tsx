@@ -68,9 +68,10 @@ import {
 import { tbtcSlice } from "../../../store/tbtc"
 import { ExplorerDataType } from "../../../utils/createEtherscanLink"
 import { PageComponent } from "../../../types"
-import mainCardBackground from "../../../static/images/minting-completed-card-bg.png"
+import mainCardBackground from "../../../static/images/ranadid3.png"
 import { DotsLoadingIndicator } from "../../../components/DotsLoadingIndicator"
-import tBTCIcon from "../../../static/images/tBTC.svg"
+import tBTCIcon from "../../../static/images/ranadid4.png"
+import { EthereumDark } from "../../../static/icons/EthereumDark"
 import BitcoinIcon from "../../../static/images/bitcoin.svg"
 import { CurveFactoryPoolId, ExternalHref } from "../../../enums"
 import { ExternalPool } from "../../../components/tBTC/ExternalPool"
@@ -279,7 +280,14 @@ export const DepositDetails: PageComponent = () => {
                     <HStack spacing="4" mt="auto" mb="10" alignSelf="center">
                       <Image src={BitcoinIcon} />
                       <DotsLoadingIndicator />
-                      <Image src={tBTCIcon} />
+                      {/* <Image src={tBTCIcon} /> */}
+                      <Icon
+                        zIndex={999}
+                        height="62px"
+                        w="64px"
+                        as={EthereumDark}
+                        m="auto"
+                      />
                     </HStack>
                     <MintingProcessResource
                       {...stepToResourceData[mintingProgressStep]}
@@ -304,13 +312,13 @@ export const DepositDetails: PageComponent = () => {
           </>
         )}
       </Card>
-      {mintingProgressStep === "completed" && (
+      {/* {mintingProgressStep === "completed" && (
         <ExternalPool
           title={"iBTC Curve Pool"}
           externalPoolData={{ ...tBTCWBTCSBTCPoolData }}
           mt={4}
         />
-      )}
+      )} */}
     </DepositDetailsPageContext.Provider>
   )
 }

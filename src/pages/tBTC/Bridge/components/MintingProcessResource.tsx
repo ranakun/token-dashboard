@@ -16,7 +16,7 @@ export const MintingProcessResource: FC<MintingProcessResourceProps> = ({
 }) => {
   return (
     <>
-      <Box
+      {/* <Box
         bg="yellow.50"
         p="4"
         m="-1rem"
@@ -25,7 +25,7 @@ export const MintingProcessResource: FC<MintingProcessResourceProps> = ({
         mt="auto"
       >
         <Image src={codeSlashIllustration} mx="auto" />
-      </Box>
+      </Box> */}
       <H6 mt="8" color="gray.800">
         {title}
       </H6>
