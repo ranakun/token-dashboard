@@ -165,6 +165,10 @@ const MakeDepositComponent: FC<{
           },
         ]}
       />
+      <BodyMd color="brand.500" mb={6}>
+        Note: The BTC deposit will be made by our mock-bitcoin-client, for
+        testing purposes.
+      </BodyMd>
       {/* TODO: No need to use button here. We can replace it with just some text */}
       <Button
         isLoading={true}

@@ -77,7 +77,7 @@ export const MintingTimelineStep3: FC<MintingTimelineStepProps> = ({
       stepText="Step 3"
       helperLabelText="ACTION ON ETHEREUM NETWORK"
       title="Initiate minting"
-      description="Minting iBTC does not require you to wait for the Bitcoin confirmations. Sign an Ethereum transaction in your wallet and your iBTC will arrive in around 1 to 3 hours."
+      description="Minting iBTC does not require you to wait for the Bitcoin confirmations. Sign an Ethereum transaction in your wallet and your iBTC will arrive in around 5 minutes."
       imageSrc={tbtcMintingStep3}
       {...restProps}
     />
@@ -124,7 +124,8 @@ export const MintingTimeline: FC = () => {
         mb="4"
       />
       <Badge size="sm" colorScheme="yellow" variant="solid">
-        <Icon as={TimeIcon} alignSelf="center" /> ~1-3 hours minting time
+        <Icon as={TimeIcon} alignSelf="center" /> ~5 minutes current minting
+        time
       </Badge>
     </Box>
   )
