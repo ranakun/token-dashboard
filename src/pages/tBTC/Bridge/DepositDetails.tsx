@@ -255,7 +255,7 @@ export const DepositDetails: PageComponent = () => {
                   alignSelf="flex-start"
                   mb="4"
                 >
-                  <Icon as={TimeIcon} /> ~3 hours minting time
+                  <Icon as={TimeIcon} /> ~5 minutes minting time
                 </Badge>
                 <List color="gray.500" spacing="2" mb="20">
                   {transactions
